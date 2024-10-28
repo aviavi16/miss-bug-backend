@@ -4,7 +4,7 @@ import { utilService } from "../../services/util.service.js"
 import { userService } from "../user/user.service.js"
 import bcrypt from 'bcrypt'
 
-const cryptr = new Cryptr( process.env.SECRET || 'Secret-api-1234')
+const cryptr = new Cryptr( process.env.SECRET )
 
 export const authService = {
     login,

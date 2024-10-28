@@ -139,5 +139,15 @@
     "img": "",
     "createdAt": 1730070823544,
     "isAdmin": false
+  },
+  {
+    "_id": "IqL13",
+    "username": "testing user encypt",
+    "fullname": "testing",
+    "password": "$2b$10$Evgjv2lULUgdA3AGJMhZjeGNuy1T7Wv8AqUacgh40MwQ28ERx5fii",
+    "score": 10000,
+    "img": "",
+    "createdAt": 1730104366751,
+    "isAdmin": false
   }
 ]
