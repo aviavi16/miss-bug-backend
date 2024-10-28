@@ -1,0 +1,28 @@
+[
+  {
+    "title": "you don't know!",
+    "severity": 32,
+    "createdAt": null,
+    "owner": {
+      "_id": "XI97p",
+      "fullname": "Muki6 Ja",
+      "img": "https://m.media-amazon.com/images/I/91ZhFnr13LL.png",
+      "score": 2342342,
+      "isAdmin": false
+    },
+    "_id": "M7xNU"
+  },
+  {
+    "title": "testing my auth",
+    "severity": 2,
+    "createdAt": null,
+    "owner": {
+      "_id": "XI97p",
+      "fullname": "Muki6 Ja",
+      "img": "https://m.media-amazon.com/images/I/91ZhFnr13LL.png",
+      "score": 2342342,
+      "isAdmin": false
+    },
+    "_id": "OSyvE"
+  }
+]
