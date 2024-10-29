@@ -493,3 +493,138 @@
 28.10.2024, 10:32:46 - DEBUG - auth.service - signup with username: testing user encypt, fullname: testing
 28.10.2024, 10:32:46 - DEBUG - auth.route (controller) - new account:{"username":"testing user encypt","password":"$2b$10$Evgjv2lULUgdA3AGJMhZjeGNuy1T7Wv8AqUacgh40MwQ28ERx5fii","fullname":"testing"}
 28.10.2024, 10:32:46 - INFO - User signup : | {"_id":"IqL13","fullname":"testing","img":"","score":10000,"isAdmin":false}
+28.10.2024, 19:37:47 - INFO - Example app listening on port 3030
+28.10.2024, 19:38:39 - INFO - visited route /logout
+28.10.2024, 19:38:39 - DEBUG - user logged out
+28.10.2024, 19:38:59 - INFO - visited route /login
+28.10.2024, 19:38:59 - INFO - User login:  | {"_id":"XI97p","fullname":"Muki6 Ja","img":"https://m.media-amazon.com/images/I/91ZhFnr13LL.png","score":2342342,"isAdmin":false}
+28.10.2024, 19:39:44 - INFO - visited route /logout
+28.10.2024, 19:39:44 - DEBUG - user logged out
+28.10.2024, 19:40:08 - INFO - visited route /signup
+28.10.2024, 19:40:08 - DEBUG - trrrrrrrrrrrry me!
+28.10.2024, 19:40:08 - ERROR -  Failed to Signup Username already taken
+28.10.2024, 19:40:08 - DEBUG - auth.service - signup with username: trrrrrrrrrrrry me!, fullname: testing my error handling
+28.10.2024, 19:40:08 - ERROR - Username already taken
+28.10.2024, 19:47:28 - DEBUG - Invalid login token 
+29.10.2024, 8:50:16 - DEBUG - user testing 1 2
+29.10.2024, 8:50:16 - ERROR - TypeError: loggerService.log is not a function
+29.10.2024, 8:50:16 - ERROR -  Failed to Signup TypeError: loggerService.log is not a function
+29.10.2024, 8:50:16 - INFO - visited route /signup
+29.10.2024, 8:54:58 - INFO - Example app listening on port 3030
+29.10.2024, 8:55:23 - INFO - visited route /signup
+29.10.2024, 8:55:23 - DEBUG - testing my app
+29.10.2024, 8:55:23 - INFO - Missing credentials, should have been spotted at frontend
+29.10.2024, 8:55:23 - ERROR -  Failed to Signup Missing required signup info
+29.10.2024, 8:55:23 - ERROR - Missing required signup info
+29.10.2024, 8:56:56 - INFO - Example app listening on port 3030
+29.10.2024, 8:57:05 - INFO - visited route /signup
+29.10.2024, 8:57:05 - DEBUG - sfsdfsdfdsfsd
+29.10.2024, 8:57:05 - INFO - Missing credentials, should have been spotted at frontend
+29.10.2024, 8:57:05 - ERROR -  Failed to Signup Missing required signup info
+29.10.2024, 8:57:05 - ERROR - Missing required signup info
+29.10.2024, 8:58:32 - INFO - visited route /signup
+29.10.2024, 8:58:32 - INFO - Missing credentials, should have been spotted at frontend
+29.10.2024, 8:58:32 - DEBUG - sdsdfdsfdsf
+29.10.2024, 8:58:32 - ERROR - Missing required signup info
+29.10.2024, 8:58:32 - ERROR -  Failed to Signup Missing required signup info
+29.10.2024, 9:01:35 - INFO - visited route /signup
+29.10.2024, 9:01:35 - DEBUG - asdasdsad
+29.10.2024, 9:01:35 - DEBUG - auth.service - signup with username: asdasdsad, fullname: sadsdsdfsdf
+29.10.2024, 9:01:35 - ERROR - Error: data must be a string or Buffer and salt must either be a salt string or a number of rounds
+29.10.2024, 9:01:35 - ERROR -  Failed to Signup Error: data must be a string or Buffer and salt must either be a salt string or a number of rounds
+29.10.2024, 9:03:54 - INFO - Example app listening on port 3030
+29.10.2024, 9:04:05 - INFO - visited route /signup
+29.10.2024, 9:04:05 - DEBUG - asdsaadsadsdadasdsaddsd
+29.10.2024, 9:04:05 - DEBUG - auth.service - signup with username: asdsaadsadsdadasdsaddsd, fullname: testing my function
+29.10.2024, 9:04:05 - ERROR - Error: data must be a string or Buffer and salt must either be a salt string or a number of rounds
+29.10.2024, 9:04:05 - ERROR -  Failed to Signup Error: data must be a string or Buffer and salt must either be a salt string or a number of rounds
+29.10.2024, 9:07:36 - INFO - visited route /signup
+29.10.2024, 9:07:36 - DEBUG - this is my last attempt!
+29.10.2024, 9:07:36 - DEBUG - auth.service - signup with username: this is my last attempt!, fullname: this should work
+29.10.2024, 9:07:36 - DEBUG - auth.route (controller) - new account:{"username":"this is my last attempt!","password":"$2b$10$Vl.qMCNi8Fu8N5S8YmCAyu4V/2SQNSUtrKkwnHAnY4tToWouw2k3S","fullname":"this should work"}
+29.10.2024, 9:07:36 - INFO - User signup : | {"_id":"IlnTu","fullname":"this should work","img":"","score":10000,"isAdmin":false}
+29.10.2024, 9:10:40 - DEBUG - give it another try?
+29.10.2024, 9:10:40 - INFO - visited route /signup
+29.10.2024, 9:10:40 - DEBUG - auth.service - signup with username: give it another try?, fullname: this is defenitly working
+29.10.2024, 9:10:40 - DEBUG - auth.route (controller) - new account:{"username":"give it another try?","password":"$2b$10$g8nCbLlcza4X2ZgFf9FgTOTZ7GZArtksA/KK2hVEZxxSJKBOfi4Sq","fullname":"this is defenitly working"}
+29.10.2024, 9:10:40 - INFO - User signup : | {"_id":"9qdjQ","fullname":"this is defenitly working","img":"","score":10000,"isAdmin":false}
+29.10.2024, 9:24:02 - INFO - Example app listening on port 3030
+29.10.2024, 9:26:32 - INFO - Example app listening on port 3030
+29.10.2024, 9:27:49 - INFO - Example app listening on port 3030
+29.10.2024, 9:29:10 - INFO - Example app listening on port 3030
+29.10.2024, 9:29:27 - DEBUG - auth.service - signup with username: this is error?, fullname: defenitaly an error
+29.10.2024, 9:31:16 - INFO - Example app listening on port 3030
+29.10.2024, 9:47:08 - INFO - visited route /logout
+29.10.2024, 9:47:08 - DEBUG - user logged out
+29.10.2024, 9:51:11 - DEBUG - creating new user
+29.10.2024, 9:51:11 - INFO - visited route /signup
+29.10.2024, 9:51:11 - DEBUG - auth.service - signup with username: creating new user, fullname: this is my fullname
+29.10.2024, 9:51:11 - DEBUG - auth.route (controller) - new account:{"username":"creating new user","password":"$2b$10$Zp3ETEddAhIsdERmTlb5oO9QD/Mw4//4miCpIlfZvYWhDax.mb1YW","fullname":"this is my fullname"}
+29.10.2024, 9:51:11 - INFO - User signup : | {"_id":"QB89r","fullname":"this is my fullname","img":"","score":10000,"isAdmin":false}
+29.10.2024, 9:52:24 - DEBUG - auth.service - signup with username: will it work?, fullname: maybe? fullname
+29.10.2024, 10:04:11 - INFO - Example app listening on port 3030
+29.10.2024, 10:04:25 - DEBUG - auth.service - signup with username: dssddsfdsfdsfd, fullname: this is test again
+29.10.2024, 10:04:35 - INFO - Example app listening on port 3030
+29.10.2024, 10:05:51 - INFO - Example app listening on port 3030
+29.10.2024, 10:06:01 - DEBUG - auth.service - signup with username: sdfdsdfsdfdsdf, fullname: sud off
+29.10.2024, 10:07:01 - INFO - Example app listening on port 3030
+29.10.2024, 10:07:18 - DEBUG - auth.service - signup with username: trust me im an engineer, fullname: teststststststts
+29.10.2024, 10:07:50 - INFO - Example app listening on port 3030
+29.10.2024, 10:08:00 - DEBUG - auth.service - signup with username: acount, fullname: acount
+29.10.2024, 10:12:22 - INFO - Example app listening on port 3030
+29.10.2024, 10:12:41 - INFO - Example app listening on port 3030
+29.10.2024, 10:16:14 - DEBUG - auth.service - signup with username: test my user again, fullname: asdasdd
+29.10.2024, 10:17:18 - INFO - Example app listening on port 3030
+29.10.2024, 10:17:30 - DEBUG - auth.service - signup with username: this is working!!, fullname: It's allive!!
+29.10.2024, 10:17:30 - DEBUG - user.route (controller) - new account:{"_id":"lgvno","username":"this is working!!","fullname":"It's allive!!","password":"$2b$10$wcHvH40ROXnemE.HWFdti.wANXbE4udseg20WN87JdqBtHhUOt.dC","score":10000,"img":"","createdAt":1730189850877,"isAdmin":false}
+29.10.2024, 10:20:39 - INFO - visited route /logout
+29.10.2024, 10:20:39 - DEBUG - user logged out
+29.10.2024, 10:21:26 - INFO - visited route /signup
+29.10.2024, 10:21:26 - DEBUG - easyToRemember
+29.10.2024, 10:21:26 - DEBUG - auth.service - signup with username: easyToRemember, fullname: password is easy
+29.10.2024, 10:21:27 - DEBUG - auth.route (controller) - new account:{"_id":"IFnyM","username":"easyToRemember","fullname":"password is easy","password":"$2b$10$aGvJ6IaYiRVahDlFh5ACrue3KMAVxX7FFH7gNSsUvnBNGC1KaZo/e","score":10000,"img":"","createdAt":1730190087052,"isAdmin":false}
+29.10.2024, 10:21:27 - INFO - User signup : | {"_id":"IFnyM","fullname":"password is easy","img":"","score":10000,"isAdmin":false}
+29.10.2024, 10:24:03 - DEBUG - auth.service - signup with username: the session stotage!!, fullname: look into the session storage
+29.10.2024, 10:24:03 - DEBUG - user.route (controller) - new account:{"_id":"OWA0W","username":"the session stotage!!","fullname":"look into the session storage","password":"$2b$10$wwnafwrB6ASrp9.dW0zK..d3A8coOzqZaYkKFA/xkYES8f7XOs7ym","score":10000,"img":"","createdAt":1730190243658,"isAdmin":false}
+29.10.2024, 10:26:16 - INFO - visited route /logout
+29.10.2024, 10:26:16 - DEBUG - user logged out
+29.10.2024, 10:26:38 - DEBUG - show me image
+29.10.2024, 10:26:38 - INFO - visited route /signup
+29.10.2024, 10:26:38 - DEBUG - auth.service - signup with username: show me image, fullname: image fix
+29.10.2024, 10:26:38 - INFO - User signup : | {"_id":"tvWcL","fullname":"image fix","img":"","score":10000,"isAdmin":false}
+29.10.2024, 10:26:38 - DEBUG - auth.route (controller) - new account:{"_id":"tvWcL","username":"show me image","fullname":"image fix","password":"$2b$10$tpXqDCN0Fj2lcI3ws0NJU.Puvt2dzzBFOYSbJcse/zJE6ddw/fglC","score":10000,"img":"","createdAt":1730190398932,"isAdmin":false}
+29.10.2024, 10:27:40 - INFO - visited route /logout
+29.10.2024, 10:27:40 - DEBUG - user logged out
+29.10.2024, 10:28:08 - DEBUG - password is easy!
+29.10.2024, 10:28:08 - INFO - visited route /signup
+29.10.2024, 10:28:08 - DEBUG - auth.service - signup with username: password is easy!, fullname: look inside your brain
+29.10.2024, 10:28:08 - INFO - User signup : | {"_id":"ib9CJ","fullname":"look inside your brain","img":"","score":10000,"isAdmin":false}
+29.10.2024, 10:28:08 - DEBUG - auth.route (controller) - new account:{"_id":"ib9CJ","username":"password is easy!","fullname":"look inside your brain","password":"$2b$10$0Xxc/P.QKgKbtm0q.87EeuxC5Aubaoq.89AMTMIB0.nfTVPwNniwy","score":10000,"img":"","createdAt":1730190488460,"isAdmin":false}
+29.10.2024, 10:28:52 - ERROR - Missing required signup info
+29.10.2024, 10:28:52 - INFO - Missing credentials, should have been spotted at frontend
+29.10.2024, 10:28:56 - INFO - visited route /logout
+29.10.2024, 10:28:56 - DEBUG - user logged out
+29.10.2024, 10:28:59 - INFO - visited route /signup
+29.10.2024, 10:28:59 - DEBUG - password is easy!
+29.10.2024, 10:28:59 - DEBUG - auth.service - signup with username: password is easy!, fullname: look inside your brain
+29.10.2024, 10:28:59 - INFO - User signup : | {"_id":"nWkTw","fullname":"look inside your brain","img":"","score":10000,"isAdmin":false}
+29.10.2024, 10:28:59 - DEBUG - auth.route (controller) - new account:{"_id":"nWkTw","username":"password is easy!","fullname":"look inside your brain","password":"$2b$10$luFoEdEwdOV7jSNdqhTIQuIHOzgOUMQrSEvFePvd8PCk9XUkmh4g2","score":10000,"img":"","createdAt":1730190539918,"isAdmin":false}
+29.10.2024, 10:30:22 - INFO - visited route /logout
+29.10.2024, 10:30:22 - DEBUG - user logged out
+29.10.2024, 10:30:27 - INFO - visited route /signup
+29.10.2024, 10:30:28 - DEBUG - password is easy!
+29.10.2024, 10:30:28 - DEBUG - auth.service - signup with username: password is easy!, fullname: look inside your brain2
+29.10.2024, 10:30:28 - DEBUG - auth.route (controller) - new account:{"_id":"u9PsL","username":"password is easy!","fullname":"look inside your brain2","password":"$2b$10$mPZnWcA8Xm7b9/e8X8N3R.zUpbmyhpCiyY7/n/k8oW/5MehkNeimm","score":10000,"img":"","createdAt":1730190628058,"isAdmin":false}
+29.10.2024, 10:30:28 - INFO - User signup : | {"_id":"u9PsL","fullname":"look inside your brain2","img":"","score":10000,"isAdmin":false}
+29.10.2024, 10:46:17 - INFO - Example app listening on port 3030
+29.10.2024, 10:46:56 - INFO - Example app listening on port 3030
+29.10.2024, 10:49:50 - INFO - Example app listening on port 3030
+29.10.2024, 10:50:03 - INFO - visited route /logout
+29.10.2024, 10:50:03 - DEBUG - user logged out
+29.10.2024, 10:50:09 - INFO - visited route /signup
+29.10.2024, 10:50:09 - DEBUG - password is easy!
+29.10.2024, 10:50:09 - DEBUG - auth.service - signup with username: password is easy!, fullname: look inside your brain3
+29.10.2024, 10:50:09 - DEBUG - auth.route (controller) - new account:{"_id":"g4K4u","username":"password is easy!","fullname":"look inside your brain3","password":"$2b$10$KPkk5KCcchlxpjwFccYDiuYWLsncFcLNtpd4iGMBvhURfVgi5xdea","score":10000,"img":"https://static8.depositphotos.com/1007989/894/i/450/depositphotos_8943042-stock-photo-okay-smiley.jpg","createdAt":1730191809384,"isAdmin":false}
+29.10.2024, 10:50:09 - INFO - User signup : | {"_id":"g4K4u","fullname":"look inside your brain3","img":"https://static8.depositphotos.com/1007989/894/i/450/depositphotos_8943042-stock-photo-okay-smiley.jpg","score":10000,"isAdmin":false}
+29.10.2024, 10:55:47 - INFO - Example app listening on port 3030
+29.10.2024, 11:13:03 - INFO - Example app listening on port 3030

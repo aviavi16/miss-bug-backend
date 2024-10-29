@@ -27,127 +27,13 @@
     "isAdmin": false
   },
   {
-    "username": "apiAddUser",
-    "password": "$2b$10$/xNntji26wnCDvGcE6VBuejVIZ/3kSMcc/qVYa5oIAa5AyDBvNTV6",
-    "fullname": "Mr. Pickles",
-    "_id": "TMzDs",
-    "createdAt": 1729768158808
-  },
-  {
-    "_id": "yxsiU",
-    "username": "apiAddUser2",
-    "password": "$2b$10$IhcADoDpO/Mc.a021ZXAR.OLOG4Bz6Mj.7Fl6/aFRk0MQRyYHUD3m",
-    "fullname": "Mr. Pickles2",
-    "createdAt": 1729769321351
-  },
-  {
-    "_id": "AtZ0x",
-    "username": "apiAddUser3",
-    "fullname": "Mr. Pickles3",
-    "password": "$2b$10$ZLiKaqxWX7zRn682u1h4re.vShzK0UD9Dl8u2JjeTcPxrvpXCkTwS",
+    "_id": "g4K4u",
+    "username": "password is easy!",
+    "fullname": "look inside your brain3",
+    "password": "$2b$10$KPkk5KCcchlxpjwFccYDiuYWLsncFcLNtpd4iGMBvhURfVgi5xdea",
     "score": 10000,
-    "img": "",
-    "createdAt": 1729769413953,
-    "isAdmin": false
-  },
-  {
-    "_id": "9GJrf",
-    "username": "ksdnfkdslndsf",
-    "fullname": "aviavi",
-    "password": "$2b$10$FOeXILzR1JepRh8HQdL4xOFz5HdAwFR0AWSyST01RcD72nBzw8IQe",
-    "score": 10000,
-    "img": "",
-    "createdAt": 1730033247648,
-    "isAdmin": false
-  },
-  {
-    "_id": "0rYUe",
-    "username": "sdsddsdsf",
-    "fullname": "aviavi",
-    "password": "$2b$10$Oao/Ym3pD3fKEE9sdadGkegLVpmlepDuGRl1nSBd.aqFPjXuxbBbm",
-    "score": 10000,
-    "img": "",
-    "createdAt": 1730033351395,
-    "isAdmin": false
-  },
-  {
-    "_id": "DvGDP",
-    "username": "apiUser",
-    "fullname": "very pleasent user",
-    "password": "$2b$10$mb59oezJDOvaY.3azKy8nughA9Wu92wppRUIL47T29Fhs0WAa5eIS",
-    "score": 10000,
-    "img": "",
-    "createdAt": 1730033512458,
-    "isAdmin": false
-  },
-  {
-    "_id": "v5TkA",
-    "username": "dsfdsfdsfsfds",
-    "fullname": "lopsi",
-    "password": "$2b$10$Y.ZJRHg7AbwZp3sIPgULN.wJqkgnw1PZhSnHlndVtbqnd8Do42vUS",
-    "score": 10000,
-    "img": "",
-    "createdAt": 1730033657736,
-    "isAdmin": false
-  },
-  {
-    "_id": "BpRWL",
-    "username": "testing in progress",
-    "fullname": "tester choice",
-    "password": "$2b$10$xVwjKi4Bk/bCyiXF2yYJU.MzSWIxTaxZlhLHt84ZWUqmnqo6VD7vy",
-    "score": 10000,
-    "img": "",
-    "createdAt": 1730034675174,
-    "isAdmin": false
-  },
-  {
-    "_id": "VA4fv",
-    "username": "testing in progress2",
-    "fullname": "tester choice",
-    "password": "$2b$10$Yok1y.PXk6aEtiNkuWvI5Oba1Fqhd1tcmI0OoOr242mDKxaph/642",
-    "score": 10000,
-    "img": "",
-    "createdAt": 1730034686710,
-    "isAdmin": false
-  },
-  {
-    "_id": "Skmra",
-    "username": "testing in progress3",
-    "fullname": "tester choice3",
-    "password": "$2b$10$Dat12H4bvCSwZ7FHT7ut8OxpUPMupn/fKvMkyS/tflr9s5otmDjz6",
-    "score": 10000,
-    "img": "",
-    "createdAt": 1730035052205,
-    "isAdmin": false
-  },
-  {
-    "_id": "A42FW",
-    "username": "testing in progress4",
-    "fullname": "tester choice4",
-    "password": "$2b$10$ncAU5x.eexgLbj9vK0UnuetkO4n9BzzvROcAaCSwDF5auROzKpEmW",
-    "score": 10000,
-    "img": "",
-    "createdAt": 1730035138009,
-    "isAdmin": false
-  },
-  {
-    "_id": "tKjvk",
-    "username": "trrrrrrrrrrrry me2!",
-    "fullname": "i am mr pickles!",
-    "password": "$2b$10$3.Acr0Cea1N.zEjje5GVcuujsWFdxOSsBlY1sPMhiErHN4/D/CuGu",
-    "score": 10000,
-    "img": "",
-    "createdAt": 1730070823544,
-    "isAdmin": false
-  },
-  {
-    "_id": "IqL13",
-    "username": "testing user encypt",
-    "fullname": "testing",
-    "password": "$2b$10$Evgjv2lULUgdA3AGJMhZjeGNuy1T7Wv8AqUacgh40MwQ28ERx5fii",
-    "score": 10000,
-    "img": "",
-    "createdAt": 1730104366751,
+    "img": "https://static8.depositphotos.com/1007989/894/i/450/depositphotos_8943042-stock-photo-okay-smiley.jpg",
+    "createdAt": 1730191809384,
     "isAdmin": false
   }
 ]

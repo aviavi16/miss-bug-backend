@@ -4,7 +4,7 @@ import { utilService } from "../../services/util.service.js"
 import { userService } from "../user/user.service.js"
 import bcrypt from 'bcrypt'
 
-const cryptr = new Cryptr( process.env.SECRET )
+const cryptr = new Cryptr( process.env.SECRET || 'Secret-api-1234')
 
 export const authService = {
     login,
@@ -33,13 +33,12 @@ async function login( username, password){
     return miniUser
 }
 
-async function signup( username, password, fullname ){
+async function signup( username, password, fullname , img, score ){
 
     try {
         const saltRounds = 10
-
         if ( !username || !password || !fullname) {
-            loggerService.log('Missing credentials, should have been spotted at frontend')
+            loggerService.info('Missing credentials, should have been spotted at frontend')
             throw 'Missing required signup info'
         }
 
@@ -49,7 +48,8 @@ async function signup( username, password, fullname ){
         if (userExist) throw 'Username already taken'
 
         const hash = await bcrypt.hash( password, saltRounds)
-        return userService.save( { username, password: hash, fullname })
+        return userService.save( { username, password: hash, fullname , img, score  })
+        
     } catch (err) {
         loggerService.error(err)
         throw err

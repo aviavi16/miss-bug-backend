@@ -1,3 +1,5 @@
+import { loggerService } from "../../services/logger.service.js"
+import { authService } from "../auth/auth.service.js"
 import { userService } from "./user.service.js"
 
 export async function getUsers (req, res){
@@ -41,23 +43,17 @@ export async function updateUser (req, res) {
 export async function addUser  (req, res)  {
 
 
-    const {_id, username, fullname, password, score , img, createdAt , isAdmin } = req.body
-    let userToSave = {
-        username,
-        fullname,
-        password: +password,
-        score : +score,
-        img,
-        createdAt,
-        isAdmin,
-    }
 
+   
     try {
-        const savedUser = await userService.save( userToSave )
+        const { username, password, fullname  } = req.body //, score , img, createdAt , isAdmin
+        const account = await authService.signup( username, password , fullname)
+        console.log('account:', account)
+        loggerService.debug(`user.route (controller) - new account:` + JSON.stringify(account)  )
 
 
-        res.send(savedUser)
-    } catch (error) {
+        res.send(account)
+    } catch (err) {
         return res.status(400).send(err)
     }
    
