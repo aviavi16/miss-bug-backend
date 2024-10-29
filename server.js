@@ -32,7 +32,7 @@ app.use('/api/user', userRoutes )
 import {authRoutes} from './api/auth/auth.routes.js'
 app.use('/api/auth', authRoutes )
 
-const port = 3030
+const port = process.env.PORT || 3000;
 
 app.get('/**', (req, res) => {
     res.sendFile( path.resolve('public/index.html'))
