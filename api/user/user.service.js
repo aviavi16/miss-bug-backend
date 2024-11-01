@@ -98,17 +98,14 @@ async function save( userToSave ){
             users.splice(index, 1 , userToSave)
     
         } else{
-            const { username, password, fullname, img, score } = userToSave
-            console.log('1 userToSave:', userToSave)
+            const { username, password, fullname } = userToSave
             userToSave = userService.getEmptyUser()
-            console.log('test:', username, password, fullname)
             userToSave.username = username
             userToSave.password = password
             userToSave.fullname = fullname
             userToSave.createdAt = Date.now()
-            userToSave.img = img || 'https://static8.depositphotos.com/1007989/894/i/450/depositphotos_8943042-stock-photo-okay-smiley.jpg'
-            userToSave.score = score || 10000
-            console.log('2 userToSave:', userToSave)
+            userToSave.img = 'https://static8.depositphotos.com/1007989/894/i/450/depositphotos_8943042-stock-photo-okay-smiley.jpg'
+            userToSave.score = 10000
 
             users.push(userToSave)
         }
