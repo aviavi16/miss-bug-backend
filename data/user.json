@@ -45,5 +45,15 @@
     "img": "https://static8.depositphotos.com/1007989/894/i/450/depositphotos_8943042-stock-photo-okay-smiley.jpg",
     "createdAt": 1730207749648,
     "isAdmin": false
+  },
+  {
+    "_id": "rynA9",
+    "username": "avinoam2",
+    "fullname": "avi xxm",
+    "password": "$2b$10$BkSoekZAjg0EwJWrDmYcTeK7AB4cmgTZgak0/AHxLqgRVofCZH1ba",
+    "score": 10000,
+    "img": "https://static8.depositphotos.com/1007989/894/i/450/depositphotos_8943042-stock-photo-okay-smiley.jpg",
+    "createdAt": 1730466758004,
+    "isAdmin": false
   }
 ]
