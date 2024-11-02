@@ -2,14 +2,9 @@ import express from 'express'
 import path from 'path'
 import cors from 'cors'
 import cookieParser from 'cookie-parser'
-
-import { bugService } from './api/bug/bug.service.js'
 import { loggerService } from './services/logger.service.js'
 
 const app = express()
-
-
-//TODO add labels (also to filter)
 
 const coreOptions = {
     origin: [
@@ -18,6 +13,7 @@ const coreOptions = {
     ],
     credentials: true
 }
+
 app.use (express.static( 'public' ))
 app.use (express.json())
 app.use( cookieParser())
@@ -32,7 +28,7 @@ app.use('/api/user', userRoutes )
 import {authRoutes} from './api/auth/auth.routes.js'
 app.use('/api/auth', authRoutes )
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3000
 
 app.get('/**', (req, res) => {
     res.sendFile( path.resolve('public/index.html'))

@@ -3,101 +3,97 @@ import { utilService } from "../../services/util.service.js"
 
 export const userService = {
     query,
-    getById, 
+    getById,
     getByUsername,
-    remove, 
+    remove,
     save,
     getEmptyUser,
 }
 
-const users = utilService.readJsonFile( './data/user.json' )
+const users = utilService.readJsonFile('./data/user.json')
 const PAGE_SIZE = 2
 
-async function query( filterBy = {}){
-    var filteredUsers = [ ...users ]
-    try{
+async function query(filterBy = {}) {
+    const filteredUsers = [...users]
+    try {
         if (filterBy.search) {
-        
-            let {search} = filterBy
-           
-            filteredUsers = filteredUsers.filter(user => 
-                (user.username ? user.username : ' ').toLowerCase().includes(search.toLowerCase())) 
+
+            let { search } = filterBy
+            const regExp= new RegExp(search, 'i');
+
+            filteredUsers = filteredUsers.filter(user => regExp.test(user?.username))
         }
 
         if (filterBy.sortBy) {
-            let {sortBy} = filterBy
-            switch (sortBy){         
+            let { sortBy } = filterBy
+            switch (sortBy) {
                 case 'password':
-                    filteredUsers = filteredUsers.sort((a,b) => 
-                        (a.password - b.password )) 
+                    filteredUsers = filteredUsers.sort((user1, user2) =>
+                        (user1.password - user2.password))
                 case 'score&sortDir=-1':
-                    filteredUsers = filteredUsers.sort((a,b) => 
-                        (b.score - a.score )) 
+                    filteredUsers = filteredUsers.sort((user1, user2) =>
+                        (user2.score - user1.score))
                 case 'username':
                 default:
-                    filteredUsers.sort((a,b) =>  a.username.localeCompare(b.username, undefined, { sensitivity: 'accent' }) )                      
+                    filteredUsers.sort((user1, user2) => user1.username.localeCompare(user2.username, undefined, { sensitivity: 'accent' }))
             }
-            
+
         }
 
-        if ( filterBy.pageIdx !== undefined  && !isNaN(filterBy.pageIdx) ){
+        if (filterBy.pageIdx !== undefined) {
             const startIdx = filterBy.pageIdx * PAGE_SIZE
-            filteredUsers = filteredUsers.slice( startIdx , startIdx + PAGE_SIZE)
+            filteredUsers = filteredUsers.slice(startIdx, startIdx + PAGE_SIZE)
         }
         return filteredUsers
-    } catch (err){
-        loggerService.error(err)
-        throw 'Could not get users...'
+    } catch (err) {
+        loggerService.error('Could not get users', err)
+        throw new Error('Could not get users')
     }
-    
-
 }
 
-async function getById( userId ){
-    try{
-        const user = users.find(user => user._id === userId)
-        if( ! user) throw `User not found by userId : ${userId}`
+async function getById(userId) {
+    try {
+        let user = users.find(user => user._id === userId)
+        if (!user) throw new Error(`User not found by userId : ${userId}`)
+        user = { ...user }
+        delete user.password
         return user
-    } catch (err ){
-        loggerService.error('userService(getById): ',err)
-        throw err
+    } catch (err) {
+        loggerService.error(`Could not get user: ${userId}`, err)
+        throw new Error("Could not get user")
     }
-} 
+}
 
-async function getByUsername ( username ){
-    try{
+async function getByUsername(username) {
+    try {
         const user = users.find(user => user.username === username)
         return user
-    } catch (err ){
-        loggerService.error('userService(getByUsername): ',err)
-        throw err
+    } catch (err) {
+        loggerService.error(`Could not get user by username: ${username}`, err)
+        throw new Error("Could not get user by username")
     }
-} 
+}
 
-async function remove( userId ){
-    try{
+async function remove(userId) {
+    try {
         const userIndex = users.findIndex(user => user._id === userId)
-        if ( userIndex === -1 ) throw `bad user id, could not find user to remove ${userId}`
+        if (userIndex === -1) throw new Error(`Could not remove user: ${userId}`)
         users.splice(userIndex, 1)
 
         await _saveUsers()
-    } catch (err ){
-        loggerService.error('userService(remove): ',err)
-        throw err
+    } catch (err) {
+        loggerService.error(`Could not remove user : ${userId}`, err)
+        throw new Error("Could not remove user")
     }
+}
 
-    
-
-} 
-
-async function save( userToSave ){
+async function save(userToSave) {
     try {
-        
-        if(userToSave._id){
-            const index = users.findIndex(user => user._id === userToSave._id)
-            users.splice(index, 1 , userToSave)
-    
-        } else{
+        if (userToSave._id) {
+            const idx = users.findIndex(user => user._id === userToSave._id)
+            users[idx].severity = userToSave.severity
+            users[idx].fullname = userToSave.fullname
+        } else {
             const { username, password, fullname } = userToSave
             userToSave = userService.getEmptyUser()
             userToSave.username = username
@@ -110,40 +106,37 @@ async function save( userToSave ){
             users.push(userToSave)
         }
         await _saveUsers()
-    } catch (error) {
-        loggerService.error('userService(save): ',err)
-        throw err
+    } catch (err) {
+        loggerService.error(`Could not save user`, err)
+        throw new Error("Could not save user")
 
     }
-
     return userToSave
 }
 
-async function _saveUsers ( ){
-    try{
-        utilService.writeJsonFile( './data/user.json' , users )
-    }catch (err ){
-        loggerService.error(err)
+async function _saveUsers() {
+    try {
+        utilService.writeJsonFile('./data/user.json', users)
+    } catch (err) {
+        loggerService.error(`Could not write users to json file`)
     }
 }
 
-function getEmptyUser(){
+function getEmptyUser() {
     try {
-        console.log('test:')
-        const  emptyUser = {
-            _id : utilService.makeId(),
+        const emptyUser = {
+            _id: utilService.makeId(),
             username: '',
             fullname: '',
             password: '',
-            score : 10000,
+            score: 10000,
             img: '',
             createdAt: 0,
             isAdmin: false,
         }
-        console.log('test2:')
         return emptyUser
-    } catch (error) {
-        loggerService.error(err)
+    } catch (err) {
+        loggerService.error(`Could not get empty user`, err)
     }
-    
+
 }

@@ -4,95 +4,67 @@ import { userService } from "./user.service.js"
 
 export async function getUsers (req, res){
     const { search, sortBy, pageIdx  } = req.query
-    const filterBy = { search, sortBy, pageIdx: +pageIdx } //to cast to numbers if the filter is int
+    const filterBy = { search, sortBy, pageIdx: +pageIdx || undefined } //to cast to numbers if the filter is int
     try{
         const users = await userService.query( filterBy )
         res.send(users)
         
     } catch (err ){
-        return res.status(400).send(err)
+        loggerService.error("could not get users", err)
+        return res.status(400).send("could not get users")
     }
 }
-export async function updateUser (req, res) {
 
-    console.log('req.params:', req.body)
-    const {_id, username, fullname, password, score, img, createdAt , isAdmin } = req.body
-    let userToSave = {
-        _id,
+export async function updateUser (req, res) {
+    const {username, fullname } = req.body
+    const userToSave = {
         username,
-        fullname,
-        password: +password,
-        score : +score,
-        img,
-        createdAt,
-        isAdmin,
+        fullname
     }
 
     try {
         const savedUser = await userService.save( userToSave )
-
-
         res.send(savedUser)
     } catch (error) {
-        return res.status(400).send(err)
+        loggerService.error("could not update user", err)
+        return res.status(400).send("could not update user")
     }
-   
-
 }
 
 export async function addUser  (req, res)  {
-
-
-
-   
     try {
-        const { username, password, fullname  } = req.body //, score , img, createdAt , isAdmin
+        const { username, password, fullname  } = req.body 
         const account = await authService.signup( username, password , fullname)
-        console.log('account:', account)
         loggerService.debug(`user.route (controller) - new account:` + JSON.stringify(account)  )
-
 
         res.send(account)
     } catch (err) {
-        return res.status(400).send(err)
+        loggerService.error("could not add user", err)
+        return res.status(400).send("could not add user")
     }
-   
-
 }
 
 export async function getUser  (req, res) {
     const {userId} = req.params
-    let { visitUser = [] } = req.cookies
-    if (!visitUser.includes(userId)){
-        res.cookie('visitUser', visitUser = visitUser.concat([userId]) , {maxAge: 7 * 1000 })
-    }
-    if (visitUser.length > 3)
-        return res.status(401).send('Wait for a bit')
-       
-
+   
     try{
-        console.log('visitUser:', visitUser)
         const user = await userService.getById ( userId )
         res.send(user )
 
     } catch (err ){
-        res.status(400).send(err)
-    }
-    
+        loggerService.error("could not remove user", err)
+        res.status(400).send("could not get user")
+    }  
 }
-
-
 
 export async function removeUser  (req, res)  {
     const {userId} = req.params
     try{
-        // const users = users.filter(user => user._id !== userId)
-        //  res.send(users)
-        const users = await userService.remove( userId )
+        await userService.remove( userId )
         res.send('OK')
     } catch (err ){
-        res.status(400).send(err)
-
+        loggerService.error("could not remove user", err)
+        res.status(400).send("could not remove user")
     }
 
 
