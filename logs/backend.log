@@ -712,3 +712,5 @@
 1.11.2024, 15:12:38 - DEBUG - auth.route (controller) - new account:{"_id":"rynA9","username":"avinoam2","fullname":"avi xxm","password":"$2b$10$BkSoekZAjg0EwJWrDmYcTeK7AB4cmgTZgak0/AHxLqgRVofCZH1ba","score":10000,"img":"https://static8.depositphotos.com/1007989/894/i/450/depositphotos_8943042-stock-photo-okay-smiley.jpg","createdAt":1730466758004,"isAdmin":false}
 1.11.2024, 15:12:38 - INFO - User signup : | {"_id":"rynA9","fullname":"avi xxm","img":"https://static8.depositphotos.com/1007989/894/i/450/depositphotos_8943042-stock-photo-okay-smiley.jpg","score":10000,"isAdmin":false}
 1.11.2024, 15:13:25 - INFO - Example app listening on port 3030 
+2.11.2024, 9:01:48 - INFO - Example app listening on port 3030 
+2.11.2024, 9:27:23 - INFO - Example app listening on port 3030 
