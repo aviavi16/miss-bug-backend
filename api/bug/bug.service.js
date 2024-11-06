@@ -1,108 +1,143 @@
+import { dbService } from "../../services/db.service.js"
 import { loggerService } from "../../services/logger.service.js"
+import { ObjectId } from 'mongodb'
 import { utilService } from "../../services/util.service.js"
 
 export const bugService = {
     query,
     getById, 
     remove, 
-    save,
+    add, 
+    update,
+    addBugNote,
+    removeBugNote
 }
 
-const bugs = utilService.readJsonFile( './data/bug.json' )
 const PAGE_SIZE = 2
 
-async function query( filterBy = {}){
-    const filteredBugs = [ ...bugs ]
+async function query( filterBy = { search: ''}){
+
     
     try{
-        if (filterBy.search) {  
-            const {search} = filterBy
-            const regExp= new RegExp(search, 'i');
-           
-            filteredBugs = filteredBugs.filter(bug => { regExp.test(bug?.title) })               
-        }
 
-        if (filterBy.sortBy) {
-            const {sortBy} = filterBy
-            switch (sortBy){         
-                case 'severity':
-                    filteredBugs = filteredBugs.sort((bug1,bug2) => bug1.severity - bug2.severity ) 
-                case 'createdAt&sortDir=-1':
-                    filteredBugs = filteredBugs.sort((bug1,bug2) => bug2.createdAt - bug1.createdAt ) 
-                case 'title':
-                default:
-                    filteredBugs.sort((bug1,bug2) =>  bug1.title.localeCompare(bug2.title, undefined, { sensitivity: 'accent' }) )                      
-            }
-            
-        }
+        const criteria = _buildCriteria(filterBy)
+        loggerService.info('query for the following criteria', criteria)
 
-        if ( filterBy.pageIdx !== undefined ){
-            const startIdx = filterBy.pageIdx * PAGE_SIZE
-            filteredBugs = filteredBugs.slice( startIdx , startIdx + PAGE_SIZE)
+        const sort = _buildSort(filterBy)
+
+        const collection = await dbService.getCollection('bug')
+        var bugCursor = await collection.find( criteria, {sort}) //skip, limit if we prefer...
+    
+    
+        if (filterBy.pageIdx !== undefined) {  
+            bugCursor.skip(filterBy.pageIdx * PAGE_SIZE).limit(PAGE_SIZE)
         }
-        return filteredBugs
+    
+        const bugs = await bugCursor.toArray()
+        return bugs
+
     } catch (err){
         loggerService.error("Cannot get bugs", err)
         throw new Error ('Could not get bugs')
     }
-    
-
 }
 
 async function getById( bugId ){
     try{
-        const bug = bugs.find(bug => bug._id === bugId)
+        const criteria = { _id: ObjectId.createFromHexString(bugId)}
+        const collection = await dbService.getCollection('bug')
+        const bug = await collection.findOne(criteria)
         if( ! bug) throw new Error ( 'could not find bug')
+        bug.createdAt = bug._id.getTimestamp()
         return bug
     } catch (err ){
-        loggerService.error("could not find bug", err)
+        loggerService.error(`could not find bug : ${bugId}`, err)
         throw new Error ('could not find bug')
     }
 } 
 
-async function remove( bugId, user  ){
+async function remove( bugId){
     try{
-        const bugIndex = bugs.findIndex(bug => bug._id === bugId)
-        if ( bugIndex === -1 ) throw  new Error ("bad bug id, could not find bug to remove")
-        if( !user.isAdmin){
-            if ( bugs[index].owner._id !== user._id)  throw "Not Your Car"
-        }
-        bugs.splice(bugIndex, 1)
-
-        _saveBugs()
+        //const { _id: ownerId, isAdmin} = loggedinUser
+        const criteria = { _id : ObjectId.createFromHexString( bugId)}
+        //if( !isAdmin) criteria['owner._id'] = ownerId
+        const collection = await dbService.getCollection('bug')
+        const res =  await collection.deleteOne(criteria )
+        
+        if ( res.deletedCount === 0 ) throw  new Error ("Not Your Bug")
+        return bugId
     } catch (err ){
-        throw err
+        loggerService.error(`could not remove bug : ${bugId}`, err)
+        throw new Error ("could not remove bug")
     }
-
-    
-
 } 
 
-async function save( bugToSave, user ){
-    try {
+async function update( bug ){
+
+    const bugToSave = {title : bug.title , description: bug.description , severity : bug.severity}
+
+    try {    
+        const criteria = { _id : bugToSave._id}
+        const collection = await dbService.getCollection('bug')
+        await collection.updateOne(criteria , { $set: bugToSave })
+        return bug
         
-        if(bugToSave._id){
-            const index = bugs.findIndex(bug => bug._id === bugToSave._id)
-            bugs.splice(index, 1 , bugToSave)
-            if( !user.isAdmin){
-                if ( bugs[index].owner._id !== user._id)  throw  new Error ("Not Your Car")
-            }
-        } else{        
-            bugToSave._id = utilService.makeId()
-            bugs.push(bugToSave)
-        }
-        _saveBugs()
+    } catch (err) {
+        loggerService.error(`could not save bug: ${bug._id}`, err)
+        throw  new Error ("could not save bug")
+    }
+}
+
+async function add( bugToSave ){
+    try {        
+        const collection = await dbService.getCollection('bug')
+        await collection.insertOne(bugToSave)
+        console.log('bugToSave:213123213', bugToSave)
+        return bugToSave
     } catch (err) {
         loggerService.error("could not save bug", err)
         throw  new Error ("could not save bug")
     }
-    return bugToSave
 }
 
-async function _saveBugs ( ){
-    try{
-        utilService.writeJsonFile( './data/bug.json' , bugs )
-    }catch (err ){
-        loggerService.error("could not write bugs to json file", err)
+async function addBugNote( bugId, note ){
+    try {        
+        const criteria = {_id : ObjectId.createFromHexString(bugId)}
+        note.id = utilService.makeId()
+
+        const collection = await dbService.getCollection('bug')
+        await collection.updateOne(criteria, { $push: { notes: note } })
+        return bugToSave
+    } catch (err) {
+        loggerService.error("could not save bug note", err)
+        throw  new Error ("could not save bug note")
     }
+}
+
+async function removeBugNote( bugId, noteId){
+    try{
+        const criteria = { _id : ObjectId.createFromHexString( bugId)}
+        
+        const collection = await dbService.getCollection('bug')
+        await collection.updateOne(criteria , {$pull : { notes : { id : noteId }}})
+        
+        return noteId
+    } catch (err ){
+        loggerService.error(`could not remove bug note : ${bugId}`, err)
+        throw new Error ("could not remove bug note")
+    }
+} 
+
+function _buildCriteria(filterBy){
+    if(!filterBy.search) return {}
+    const criteria = {
+    title: { $regex: filterBy.search, $options: 'i'},
+    //severity: { $gte: filterBy.}
+    }
+    return criteria
+}
+
+function _buildSort(filterBy){
+    if (!filterBy.sortBy) return {}
+    return { [filterBy.sortBy] : filterBy.sortDir }
 }

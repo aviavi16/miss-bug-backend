@@ -791,3 +791,492 @@
 2.11.2024, 10:58:52 - INFO - Example app listening on port 3030 
 2.11.2024, 10:59:19 - INFO - Example app listening on port 3030 
 2.11.2024, 11:02:54 - INFO - Example app listening on port 3030 
+3.11.2024, 13:50:10 - INFO - Example app listening on port 3030 
+4.11.2024, 10:38:33 - INFO - Example app listening on port 3030 
+4.11.2024, 10:53:37 - INFO - Example app listening on port 3030 
+4.11.2024, 10:54:13 - INFO - Example app listening on port 3030 
+4.11.2024, 10:59:36 - INFO - Example app listening on port 3030 
+4.11.2024, 11:03:29 - INFO - Example app listening on port 3030 
+4.11.2024, 11:03:36 - INFO - Example app listening on port 3030 
+4.11.2024, 11:04:56 - INFO - Example app listening on port 3030 
+4.11.2024, 11:12:13 - INFO - Example app listening on port 3030 
+4.11.2024, 11:16:21 - INFO - Example app listening on port 3030 
+4.11.2024, 11:17:12 - INFO - Example app listening on port 3030 
+4.11.2024, 11:17:21 - INFO - Example app listening on port 3030 
+4.11.2024, 11:22:24 - INFO - Example app listening on port 3030 
+4.11.2024, 11:26:28 - INFO - Example app listening on port 3030 
+4.11.2024, 11:26:35 - INFO - Example app listening on port 3030 
+4.11.2024, 11:27:00 - INFO - Example app listening on port 3030 
+4.11.2024, 14:13:05 - INFO - Example app listening on port 3030 
+4.11.2024, 14:20:43 - INFO - query for the following criteria | {}
+4.11.2024, 14:23:27 - INFO - query for the following criteria | {}
+4.11.2024, 14:23:31 - INFO - query for the following criteria | {}
+4.11.2024, 14:23:54 - INFO - query for the following criteria | {}
+4.11.2024, 14:23:54 - INFO - query for the following criteria | {}
+4.11.2024, 14:23:59 - INFO - query for the following criteria | {}
+4.11.2024, 14:23:59 - INFO - query for the following criteria | {}
+4.11.2024, 14:38:34 - INFO - Example app listening on port 3030 
+4.11.2024, 14:38:54 - INFO - query for the following criteria | {}
+4.11.2024, 14:38:54 - INFO - query for the following criteria | {}
+4.11.2024, 14:40:43 - INFO - Example app listening on port 3030 
+4.11.2024, 14:41:03 - INFO - query for the following criteria | {}
+4.11.2024, 14:41:03 - INFO - query for the following criteria | {}
+4.11.2024, 14:41:48 - INFO - Example app listening on port 3030 
+4.11.2024, 14:41:57 - INFO - query for the following criteria | {"title":{"$regex":{}}}
+4.11.2024, 14:42:01 - INFO - query for the following criteria | {"title":{"$regex":{}}}
+4.11.2024, 14:43:14 - INFO - query for the following criteria | {"title":{"$regex":{}}}
+4.11.2024, 14:43:15 - INFO - query for the following criteria | {"title":{"$regex":{}}}
+4.11.2024, 14:43:20 - INFO - query for the following criteria | {"title":{"$regex":{}}}
+4.11.2024, 14:43:22 - INFO - query for the following criteria | {"title":{"$regex":{}}}
+4.11.2024, 14:43:22 - INFO - query for the following criteria | {"title":{"$regex":{}}}
+4.11.2024, 14:43:26 - INFO - query for the following criteria | {"title":{"$regex":{}}}
+4.11.2024, 14:43:26 - INFO - query for the following criteria | {"title":{"$regex":{}}}
+4.11.2024, 14:43:27 - INFO - query for the following criteria | {"title":{"$regex":{}}}
+4.11.2024, 14:43:53 - INFO - Example app listening on port 3030 
+4.11.2024, 14:43:59 - INFO - query for the following criteria | {"title":{"$regex":{}}}
+4.11.2024, 14:46:12 - INFO - Example app listening on port 3030 
+4.11.2024, 14:46:18 - INFO - query for the following criteria | {"$regex":{}}
+4.11.2024, 14:46:36 - INFO - query for the following criteria | {"$regex":{}}
+4.11.2024, 14:47:13 - INFO - Example app listening on port 3030 
+4.11.2024, 14:47:17 - INFO - query for the following criteria | {"$regex":{}}
+4.11.2024, 14:49:34 - INFO - Example app listening on port 3030 
+4.11.2024, 14:49:41 - INFO - query for the following criteria | {"$regex":{}}
+4.11.2024, 14:49:42 - INFO - query for the following criteria | {"$regex":{}}
+4.11.2024, 14:50:22 - INFO - Example app listening on port 3030 
+4.11.2024, 14:50:26 - INFO - query for the following criteria | {"$regex":{}}
+4.11.2024, 15:04:26 - INFO - Example app listening on port 3030 
+4.11.2024, 15:04:43 - INFO - query for the following criteria | {"$regex":{}}
+4.11.2024, 15:04:49 - INFO - query for the following criteria | {"$regex":{}}
+4.11.2024, 15:05:26 - INFO - Example app listening on port 3030 
+4.11.2024, 15:05:32 - INFO - query for the following criteria | {"$regex":{}}
+4.11.2024, 15:05:59 - INFO - Example app listening on port 3030 
+4.11.2024, 15:06:11 - INFO - query for the following criteria | {"title":{"$regex":{}}}
+4.11.2024, 15:07:56 - INFO - Example app listening on port 3030 
+4.11.2024, 15:08:04 - INFO - query for the following criteria | {"title":{"$regex":{}}}
+4.11.2024, 15:08:12 - INFO - query for the following criteria | {"title":{"$regex":{}}}
+4.11.2024, 15:08:46 - INFO - Example app listening on port 3030 
+4.11.2024, 15:08:58 - INFO - query for the following criteria | {"title":{"$regex":{}}}
+4.11.2024, 15:09:00 - INFO - query for the following criteria | {"title":{"$regex":{}}}
+4.11.2024, 15:09:02 - INFO - query for the following criteria | {"title":{"$regex":{}}}
+4.11.2024, 15:09:04 - INFO - query for the following criteria | {"title":{"$regex":{}}}
+4.11.2024, 15:09:06 - INFO - query for the following criteria | {"title":{"$regex":{}}}
+4.11.2024, 15:09:09 - INFO - query for the following criteria | {"title":{"$regex":{}}}
+4.11.2024, 15:10:43 - INFO - Example app listening on port 3030 
+4.11.2024, 15:10:50 - INFO - query for the following criteria | {"title":{"$regex":{}}}
+4.11.2024, 15:10:52 - INFO - query for the following criteria | {"title":{"$regex":{}}}
+4.11.2024, 15:10:53 - INFO - query for the following criteria | {"title":{"$regex":{}}}
+4.11.2024, 15:11:09 - INFO - Example app listening on port 3030 
+4.11.2024, 15:11:20 - INFO - query for the following criteria | {"title":{"$regex":{}}}
+4.11.2024, 15:13:03 - INFO - Example app listening on port 3030 
+4.11.2024, 15:13:09 - INFO - query for the following criteria | {"title":{"$regex":{}}}
+4.11.2024, 15:19:44 - INFO - Example app listening on port 3030 
+4.11.2024, 15:19:54 - INFO - query for the following criteria | {"title":{"$regex":"/proble/i"}}
+4.11.2024, 15:19:58 - INFO - query for the following criteria | {"title":{"$regex":"/problem/i"}}
+4.11.2024, 15:20:01 - INFO - query for the following criteria | {"title":{"$regex":"/prob/i"}}
+4.11.2024, 15:20:05 - INFO - query for the following criteria | {"title":{"$regex":"/probl/i"}}
+4.11.2024, 15:20:45 - INFO - Example app listening on port 3030 
+4.11.2024, 15:20:53 - INFO - query for the following criteria | {"title":{"$regex":"/problem/i"}}
+4.11.2024, 15:20:57 - INFO - query for the following criteria | {"title":{"$regex":"/proble/i"}}
+4.11.2024, 15:20:57 - INFO - query for the following criteria | {"title":{"$regex":"/prob/i"}}
+4.11.2024, 15:23:24 - DEBUG - Invalid login token  | Error: value must not be null or undefined
+4.11.2024, 15:23:49 - INFO - query for the following criteria | {"title":{"$regex":"/prob/i"}}
+4.11.2024, 15:23:50 - INFO - query for the following criteria | {"title":{"$regex":"/prob/i"}}
+4.11.2024, 15:24:01 - DEBUG - Invalid login token  | Error: value must not be null or undefined
+4.11.2024, 15:26:30 - INFO - Example app listening on port 3030 
+4.11.2024, 15:26:37 - INFO - query for the following criteria | {"title":{"$regex":"/prob/i"}}
+4.11.2024, 15:26:37 - INFO - query for the following criteria | {"title":{"$regex":"/prob/i"}}
+4.11.2024, 15:26:45 - DEBUG - Invalid login token  | Error: value must not be null or undefined
+4.11.2024, 15:27:15 - INFO - query for the following criteria | {"title":{"$regex":"/prob/i"}}
+4.11.2024, 15:27:15 - INFO - query for the following criteria | {"title":{"$regex":"/prob/i"}}
+4.11.2024, 15:27:58 - DEBUG - Invalid login token  | Error: value must not be null or undefined
+4.11.2024, 15:28:09 - DEBUG - Invalid login token  | Error: value must not be null or undefined
+4.11.2024, 15:31:03 - INFO - query for the following criteria | {"title":{"$regex":"/prob/i"}}
+4.11.2024, 15:31:04 - INFO - query for the following criteria | {"title":{"$regex":"/prob/i"}}
+4.11.2024, 15:31:15 - DEBUG - Invalid login token  | Error: value must not be null or undefined
+4.11.2024, 15:33:44 - INFO - query for the following criteria | {"title":{"$regex":"/prob/i"}}
+4.11.2024, 15:33:44 - INFO - query for the following criteria | {"title":{"$regex":"/prob/i"}}
+4.11.2024, 15:33:49 - DEBUG - Invalid login token  | Error: value must not be null or undefined
+4.11.2024, 15:33:51 - INFO - query for the following criteria | {"title":{"$regex":"/prob/i"}}
+4.11.2024, 15:33:52 - INFO - query for the following criteria | {"title":{"$regex":"/prob/i"}}
+4.11.2024, 15:33:56 - DEBUG - Invalid login token  | Error: value must not be null or undefined
+4.11.2024, 15:34:31 - INFO - query for the following criteria | {"title":{"$regex":"/prob/i"}}
+4.11.2024, 15:34:32 - INFO - query for the following criteria | {"title":{"$regex":"/prob/i"}}
+4.11.2024, 15:34:39 - DEBUG - Invalid login token  | Error: value must not be null or undefined
+4.11.2024, 15:35:41 - INFO - query for the following criteria | {"title":{"$regex":"/prob/i"}}
+4.11.2024, 15:35:41 - INFO - query for the following criteria | {"title":{"$regex":"/prob/i"}}
+4.11.2024, 15:35:43 - INFO - query for the following criteria | {"title":{"$regex":"/prob/i"}}
+4.11.2024, 15:35:44 - INFO - query for the following criteria | {"title":{"$regex":"/prob/i"}}
+4.11.2024, 15:35:46 - DEBUG - Invalid login token  | Error: value must not be null or undefined
+4.11.2024, 15:35:54 - DEBUG - Invalid login token  | Error: value must not be null or undefined
+4.11.2024, 15:36:32 - DEBUG - Invalid login token  | Error: value must not be null or undefined
+4.11.2024, 15:36:58 - INFO - visited route /login
+4.11.2024, 15:36:58 - INFO - User login:  | {"_id":"F2dG4","fullname":"avinoam","img":"https://static8.depositphotos.com/1007989/894/i/450/depositphotos_8943042-stock-photo-okay-smiley.jpg","score":10000,"isAdmin":false}
+4.11.2024, 15:37:01 - INFO - query for the following criteria | {}
+4.11.2024, 15:37:01 - INFO - query for the following criteria | {}
+4.11.2024, 15:37:16 - INFO - query for the following criteria | {}
+4.11.2024, 15:37:17 - INFO - query for the following criteria | {}
+4.11.2024, 15:38:41 - INFO - Example app listening on port 3030 
+4.11.2024, 15:39:10 - INFO - Example app listening on port 3030 
+4.11.2024, 15:40:07 - INFO - Example app listening on port 3030 
+4.11.2024, 15:40:28 - INFO - query for the following criteria | {}
+4.11.2024, 15:41:11 - INFO - query for the following criteria | {}
+4.11.2024, 15:44:02 - INFO - query for the following criteria | {}
+4.11.2024, 15:45:55 - INFO - Example app listening on port 3030 
+4.11.2024, 15:46:44 - INFO - Example app listening on port 3030 
+4.11.2024, 15:47:15 - INFO - Example app listening on port 3030 
+4.11.2024, 15:48:58 - INFO - query for the following criteria | {}
+4.11.2024, 15:55:19 - INFO - Example app listening on port 3030 
+4.11.2024, 15:56:12 - INFO - Example app listening on port 3030 
+4.11.2024, 15:56:30 - INFO - Example app listening on port 3030 
+4.11.2024, 16:29:33 - INFO - Example app listening on port 3030 
+4.11.2024, 16:29:52 - INFO - query for the following criteria | {}
+4.11.2024, 16:30:01 - INFO - query for the following criteria | {}
+4.11.2024, 16:31:38 - INFO - Example app listening on port 3030 
+4.11.2024, 16:32:24 - INFO - Example app listening on port 3030 
+4.11.2024, 16:33:14 - INFO - Example app listening on port 3030 
+4.11.2024, 16:33:37 - INFO - Example app listening on port 3030 
+4.11.2024, 16:33:41 - ERROR - Cannot get bug | ReferenceError: visitBug is not defined
+4.11.2024, 16:33:47 - INFO - query for the following criteria | {}
+4.11.2024, 16:33:47 - INFO - query for the following criteria | {}
+4.11.2024, 16:33:50 - ERROR - Cannot get bug | ReferenceError: visitBug is not defined
+4.11.2024, 16:33:58 - INFO - query for the following criteria | {}
+4.11.2024, 16:33:59 - INFO - query for the following criteria | {}
+4.11.2024, 16:35:08 - INFO - Example app listening on port 3030 
+4.11.2024, 16:36:22 - INFO - query for the following criteria | {}
+4.11.2024, 16:36:22 - INFO - query for the following criteria | {}
+4.11.2024, 16:36:29 - INFO - query for the following criteria | {}
+4.11.2024, 16:36:29 - INFO - query for the following criteria | {}
+4.11.2024, 16:36:33 - INFO - query for the following criteria | {}
+4.11.2024, 16:36:33 - INFO - query for the following criteria | {}
+4.11.2024, 16:36:39 - INFO - query for the following criteria | {}
+4.11.2024, 16:36:39 - INFO - query for the following criteria | {}
+4.11.2024, 19:34:54 - INFO - Example app listening on port 3030 
+4.11.2024, 21:07:00 - INFO - Example app listening on port 3030 
+4.11.2024, 21:11:20 - INFO - Example app listening on port 3030 
+4.11.2024, 21:11:27 - INFO - Example app listening on port 3030 
+4.11.2024, 21:13:10 - INFO - Example app listening on port 3030 
+4.11.2024, 21:14:46 - INFO - Example app listening on port 3030 
+4.11.2024, 21:20:43 - INFO - Example app listening on port 3030 
+4.11.2024, 21:21:04 - INFO - Example app listening on port 3030 
+4.11.2024, 21:25:56 - INFO - Example app listening on port 3030 
+4.11.2024, 21:29:03 - INFO - Example app listening on port 3030 
+4.11.2024, 21:30:37 - INFO - Example app listening on port 3030 
+4.11.2024, 21:32:53 - INFO - Example app listening on port 3030 
+4.11.2024, 21:35:05 - INFO - Example app listening on port 3030 
+4.11.2024, 21:36:43 - INFO - Example app listening on port 3030 
+4.11.2024, 21:38:15 - INFO - Example app listening on port 3030 
+4.11.2024, 21:39:43 - INFO - Example app listening on port 3030 
+4.11.2024, 23:01:52 - INFO - Example app listening on port 3030 
+4.11.2024, 23:04:08 - INFO - Example app listening on port 3030 
+4.11.2024, 23:04:29 - INFO - Example app listening on port 3030 
+4.11.2024, 23:05:13 - INFO - Example app listening on port 3030 
+4.11.2024, 23:05:30 - INFO - Example app listening on port 3030 
+4.11.2024, 23:12:57 - INFO - Example app listening on port 3030 
+4.11.2024, 23:13:53 - INFO - Example app listening on port 3030 
+4.11.2024, 23:17:10 - INFO - Example app listening on port 3030 
+4.11.2024, 23:17:17 - INFO - Example app listening on port 3030 
+4.11.2024, 23:19:29 - INFO - Example app listening on port 3030 
+4.11.2024, 23:23:42 - INFO - Example app listening on port 3030 
+4.11.2024, 23:27:49 - INFO - Example app listening on port 3030 
+4.11.2024, 23:27:55 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+4.11.2024, 23:27:56 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+4.11.2024, 23:28:47 - INFO - Example app listening on port 3030 
+4.11.2024, 23:28:53 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+4.11.2024, 23:28:53 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+4.11.2024, 23:29:18 - INFO - Example app listening on port 3030 
+4.11.2024, 23:29:31 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+4.11.2024, 23:29:31 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+4.11.2024, 23:30:48 - INFO - Example app listening on port 3030 
+4.11.2024, 23:30:54 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+4.11.2024, 23:30:54 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+4.11.2024, 23:31:12 - INFO - Example app listening on port 3030 
+4.11.2024, 23:31:18 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+4.11.2024, 23:31:18 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+4.11.2024, 23:31:53 - INFO - Example app listening on port 3030 
+4.11.2024, 23:32:02 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+4.11.2024, 23:32:03 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+4.11.2024, 23:34:09 - INFO - Example app listening on port 3030 
+4.11.2024, 23:34:21 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+4.11.2024, 23:34:22 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+4.11.2024, 23:36:21 - INFO - Example app listening on port 3030 
+4.11.2024, 23:36:33 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+4.11.2024, 23:36:33 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+4.11.2024, 23:36:45 - INFO - Example app listening on port 3030 
+4.11.2024, 23:36:54 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+4.11.2024, 23:36:54 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+4.11.2024, 23:37:40 - INFO - Example app listening on port 3030 
+4.11.2024, 23:37:45 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+4.11.2024, 23:37:45 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+4.11.2024, 23:37:51 - INFO - Example app listening on port 3030 
+4.11.2024, 23:37:56 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+4.11.2024, 23:37:56 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+4.11.2024, 23:39:10 - INFO - Example app listening on port 3030 
+4.11.2024, 23:39:30 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+4.11.2024, 23:39:31 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+4.11.2024, 23:40:22 - INFO - Example app listening on port 3030 
+4.11.2024, 23:40:28 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+4.11.2024, 23:40:28 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+4.11.2024, 23:40:54 - INFO - Example app listening on port 3030 
+4.11.2024, 23:41:09 - INFO - Example app listening on port 3030 
+4.11.2024, 23:41:13 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+4.11.2024, 23:41:13 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+4.11.2024, 23:41:29 - INFO - Example app listening on port 3030 
+4.11.2024, 23:41:35 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+4.11.2024, 23:41:35 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+4.11.2024, 23:41:54 - INFO - Example app listening on port 3030 
+4.11.2024, 23:41:58 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+4.11.2024, 23:41:59 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+4.11.2024, 23:42:18 - INFO - query for the following criteria | {"title":{"$regex":"p","$options":"i"}}
+4.11.2024, 23:42:20 - INFO - query for the following criteria | {"title":{"$regex":"pr","$options":"i"}}
+4.11.2024, 23:42:21 - INFO - query for the following criteria | {"title":{"$regex":"pro","$options":"i"}}
+4.11.2024, 23:42:23 - INFO - query for the following criteria | {"title":{"$regex":"prob","$options":"i"}}
+4.11.2024, 23:42:24 - INFO - query for the following criteria | {"title":{"$regex":"probs","$options":"i"}}
+4.11.2024, 23:42:27 - INFO - query for the following criteria | {"title":{"$regex":"prob","$options":"i"}}
+4.11.2024, 23:42:30 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 0:39:35 - INFO - Example app listening on port 3030 
+5.11.2024, 0:43:45 - INFO - Example app listening on port 3030 
+5.11.2024, 8:52:19 - INFO - Example app listening on port 3030 
+5.11.2024, 8:54:40 - INFO - Example app listening on port 3030 
+5.11.2024, 9:01:45 - INFO - Example app listening on port 3030 
+5.11.2024, 9:04:11 - INFO - Example app listening on port 3030 
+5.11.2024, 9:07:52 - INFO - Example app listening on port 3030 
+5.11.2024, 9:08:57 - INFO - Example app listening on port 3030 
+5.11.2024, 9:09:22 - INFO - Example app listening on port 3030 
+5.11.2024, 9:09:31 - INFO - Example app listening on port 3030 
+5.11.2024, 9:10:09 - INFO - Example app listening on port 3030 
+5.11.2024, 9:11:13 - INFO - Example app listening on port 3030 
+5.11.2024, 9:13:17 - INFO - Example app listening on port 3030 
+5.11.2024, 9:13:26 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 9:13:26 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 9:13:37 - INFO - Example app listening on port 3030 
+5.11.2024, 9:13:59 - INFO - Example app listening on port 3030 
+5.11.2024, 9:14:18 - INFO - Example app listening on port 3030 
+5.11.2024, 9:15:08 - INFO - Example app listening on port 3030 
+5.11.2024, 9:15:52 - INFO - Example app listening on port 3030 
+5.11.2024, 9:26:17 - DEBUG - auth.service - signup with username: this will change history!, fullname: avi avi
+5.11.2024, 9:26:17 - ERROR - Could not sign up | Username already taken
+5.11.2024, 9:26:17 - ERROR - could not add user | Error: Could not sign up
+5.11.2024, 9:27:24 - DEBUG - auth.service - signup with username: this is best!, fullname: aviavi aviavi
+5.11.2024, 9:27:25 - ERROR - Could not sign up | Username already taken
+5.11.2024, 9:27:25 - ERROR - could not add user | Error: Could not sign up
+5.11.2024, 9:30:57 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 9:30:57 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 9:33:51 - INFO - Example app listening on port 3030 
+5.11.2024, 9:34:17 - INFO - Example app listening on port 3030 
+5.11.2024, 9:34:23 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 9:34:23 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 20:54:56 - INFO - Example app listening on port 3030 
+5.11.2024, 21:01:25 - DEBUG - auth.service - signup with username: this is test, fullname: avinoam the king
+5.11.2024, 21:01:25 - ERROR - Could not sign up | Username already taken
+5.11.2024, 21:01:25 - ERROR - could not add user | Error: Could not sign up
+5.11.2024, 21:02:21 - INFO - Example app listening on port 3030 
+5.11.2024, 21:02:32 - DEBUG - auth.service - signup with username: ldksjfjdsl, fullname: asdasd
+5.11.2024, 21:02:32 - ERROR - Could not sign up | Username already taken
+5.11.2024, 21:02:32 - ERROR - could not add user | Error: Could not sign up
+5.11.2024, 21:05:14 - INFO - Example app listening on port 3030 
+5.11.2024, 21:05:26 - DEBUG - auth.service - signup with username: sdfdsf, fullname: sadasdasd
+5.11.2024, 21:05:26 - ERROR - Could not sign up | TypeError: userService.save is not a function
+5.11.2024, 21:05:26 - ERROR - could not add user | Error: Could not sign up
+5.11.2024, 21:09:35 - INFO - Example app listening on port 3030 
+5.11.2024, 21:09:50 - DEBUG - auth.service - signup with username: this is test, fullname: my name is
+5.11.2024, 21:09:50 - DEBUG - user.route (controller) - new account:{"username":"this is test","password":"$2b$10$iUAvp2hqmAHeKooMUY2/Vedlzyu/BVMxW1CmfBT7bh1vWFAgfyr.q","fullname":"my name is","_id":"672a6d7ebf3cdfb27ce5d14d"}
+5.11.2024, 21:59:41 - DEBUG - user logged out
+5.11.2024, 21:59:41 - INFO - visited route /logout
+5.11.2024, 22:00:05 - INFO - visited route /signup
+5.11.2024, 22:00:05 - DEBUG - avvvvvvvvvvv
+5.11.2024, 22:00:05 - DEBUG - auth.service - signup with username: avvvvvvvvvvv, fullname: avvvvv xxxxvvvvvbbbbnnnnn
+5.11.2024, 22:00:05 - DEBUG - auth.route (controller) - new account:{"username":"avvvvvvvvvvv","password":"$2b$10$nIz5SqSNoYMQvXf3xZhgGe/mhykrAh7IvHY/HBkqlonKf7HVn5rLa","fullname":"avvvvv xxxxvvvvvbbbbnnnnn","img":"https://static8.depositphotos.com/1007989/894/i/450/depositphotos_8943042-stock-photo-okay-smiley.jpg","score":10000,"_id":"672a7945bf3cdfb27ce5d14e"}
+5.11.2024, 22:00:05 - INFO - User signup : | {"_id":"672a7945bf3cdfb27ce5d14e","fullname":"avvvvv xxxxvvvvvbbbbnnnnn","img":"https://static8.depositphotos.com/1007989/894/i/450/depositphotos_8943042-stock-photo-okay-smiley.jpg","score":10000}
+5.11.2024, 22:00:12 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:00:12 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:00:15 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:00:15 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:01:09 - INFO - visited route /logout
+5.11.2024, 22:01:09 - DEBUG - user logged out
+5.11.2024, 22:01:16 - INFO - visited route /login
+5.11.2024, 22:01:16 - INFO - User login:  | null
+5.11.2024, 22:01:18 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:01:18 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:01:22 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:01:23 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:01:25 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:01:26 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:03:09 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:03:10 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:03:14 - ERROR - could not find bug : 6727c13a6e190c883ba181c3 | TypeError: bug._id.getTimeStamp is not a function
+5.11.2024, 22:03:14 - ERROR - Cannot get bug | Error: could not find bug
+5.11.2024, 22:04:18 - INFO - Example app listening on port 3030 
+5.11.2024, 22:04:22 - ERROR - could not find bug : 6727c13a6e190c883ba181c3 | TypeError: bug._id.getTimeStamp is not a function
+5.11.2024, 22:04:22 - ERROR - Cannot get bug | Error: could not find bug
+5.11.2024, 22:06:27 - INFO - Example app listening on port 3030 
+5.11.2024, 22:06:33 - ERROR - could not find bug : 6727c13a6e190c883ba181c3 | TypeError: ObjectId.getTimeStamp is not a function
+5.11.2024, 22:06:33 - ERROR - Cannot get bug | Error: could not find bug
+5.11.2024, 22:07:54 - INFO - Example app listening on port 3030 
+5.11.2024, 22:08:00 - ERROR - could not find bug : 6727c13a6e190c883ba181c3 | TypeError: Class constructor ObjectId cannot be invoked without 'new'
+5.11.2024, 22:08:00 - ERROR - Cannot get bug | Error: could not find bug
+5.11.2024, 22:14:51 - INFO - Example app listening on port 3030 
+5.11.2024, 22:15:06 - ERROR - could not find bug : 6727c13a6e190c883ba181c3 | TypeError: bug._id.getTimeStamp is not a function
+5.11.2024, 22:15:06 - ERROR - Cannot get bug | Error: could not find bug
+5.11.2024, 22:15:35 - INFO - Example app listening on port 3030 
+5.11.2024, 22:16:19 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:16:20 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:17:21 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:17:22 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:18:16 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:18:17 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:19:22 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:19:22 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:19:25 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:19:26 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:19:39 - INFO - visited route /login
+5.11.2024, 22:19:39 - INFO - User login:  | null
+5.11.2024, 22:19:44 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:19:45 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:19:47 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:19:47 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:20:24 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:20:25 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:21:23 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:21:46 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:21:46 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:21:55 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:21:56 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:25:40 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:25:41 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:26:46 - INFO - visited route /login
+5.11.2024, 22:26:46 - INFO - User login:  | null
+5.11.2024, 22:28:45 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:28:45 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:28:51 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:28:51 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:32:56 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:32:56 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:33:10 - INFO - visited route /login
+5.11.2024, 22:33:10 - INFO - User login:  | null
+5.11.2024, 22:33:12 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:33:13 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:39:14 - INFO - Example app listening on port 3030 
+5.11.2024, 22:41:26 - INFO - Example app listening on port 3030 
+5.11.2024, 22:41:55 - INFO - Example app listening on port 3030 
+5.11.2024, 22:42:27 - INFO - Example app listening on port 3030 
+5.11.2024, 22:43:05 - INFO - Example app listening on port 3030 
+5.11.2024, 22:44:31 - INFO - visited route /logout
+5.11.2024, 22:44:31 - DEBUG - user logged out
+5.11.2024, 22:45:00 - INFO - visited route /login
+5.11.2024, 22:45:00 - INFO - User login:  | null
+5.11.2024, 22:45:16 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:45:16 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:47:24 - INFO - Example app listening on port 3030 
+5.11.2024, 22:48:45 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:48:46 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:49:01 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+5.11.2024, 22:49:01 - INFO - query for the following criteria | {"title":{"$regex":"","$options":"i"}}
+6.11.2024, 9:43:51 - INFO - Example app listening on port 3030 
+6.11.2024, 9:44:05 - INFO - Example app listening on port 3030 
+6.11.2024, 9:44:17 - INFO - Example app listening on port 3030 
+6.11.2024, 10:01:09 - INFO - Example app listening on port 3030 
+6.11.2024, 10:01:20 - INFO - Example app listening on port 3030 
+6.11.2024, 10:01:27 - INFO - Example app listening on port 3030 
+6.11.2024, 10:02:05 - INFO - Example app listening on port 3030 
+6.11.2024, 10:04:12 - INFO - Example app listening on port 3030 
+6.11.2024, 10:04:13 - INFO - Example app listening on port 3030 
+6.11.2024, 10:04:14 - INFO - Example app listening on port 3030 
+6.11.2024, 10:06:15 - INFO - Example app listening on port 3030 
+6.11.2024, 10:06:55 - INFO - Example app listening on port 3030 
+6.11.2024, 10:08:47 - INFO - Example app listening on port 3030 
+6.11.2024, 10:09:56 - INFO - Example app listening on port 3030 
+6.11.2024, 10:10:21 - INFO - Example app listening on port 3030 
+6.11.2024, 10:13:39 - INFO - query for the following criteria | {"title":{"$options":"i"}}
+6.11.2024, 10:13:56 - INFO - query for the following criteria | {"title":{"$options":"i"}}
+6.11.2024, 10:14:52 - INFO - Example app listening on port 3030 
+6.11.2024, 10:15:01 - INFO - query for the following criteria | {"title":{"$options":"i"}}
+6.11.2024, 10:15:17 - INFO - Example app listening on port 3030 
+6.11.2024, 10:15:22 - INFO - query for the following criteria | {"title":{"$options":"i"}}
+6.11.2024, 10:15:22 - ERROR - Cannot get bugs | MongoServerError: $regex has to be a string
+6.11.2024, 10:16:08 - INFO - Example app listening on port 3030 
+6.11.2024, 10:16:12 - INFO - query for the following criteria | {"title":{"$options":"i"}}
+6.11.2024, 10:16:12 - ERROR - Cannot get bugs | MongoServerError: $regex has to be a string
+6.11.2024, 10:17:34 - INFO - Example app listening on port 3030 
+6.11.2024, 10:17:46 - INFO - Example app listening on port 3030 
+6.11.2024, 10:17:50 - INFO - query for the following criteria | {"title":{"$options":"i"}}
+6.11.2024, 10:17:50 - ERROR - Cannot get bugs | MongoServerError: $regex has to be a string
+6.11.2024, 10:18:20 - INFO - Example app listening on port 3030 
+6.11.2024, 10:18:25 - INFO - query for the following criteria | {"title":{"$options":"i"}}
+6.11.2024, 10:18:25 - ERROR - Cannot get bugs | MongoServerError: $regex has to be a string
+6.11.2024, 10:19:27 - INFO - Example app listening on port 3030 
+6.11.2024, 10:19:31 - INFO - query for the following criteria | {"title":{"$options":"i"}}
+6.11.2024, 10:19:31 - ERROR - Cannot get bugs | MongoServerError: $regex has to be a string
+6.11.2024, 10:19:40 - INFO - Example app listening on port 3030 
+6.11.2024, 10:23:00 - INFO - Example app listening on port 3030 
+6.11.2024, 10:23:03 - INFO - query for the following criteria | {"title":{"$options":"i"}}
+6.11.2024, 10:23:03 - ERROR - Cannot get bugs | MongoServerError: $regex has to be a string
+6.11.2024, 10:24:51 - INFO - Example app listening on port 3030 
+6.11.2024, 10:24:53 - INFO - query for the following criteria | {}
+6.11.2024, 10:40:20 - INFO - Example app listening on port 3030 
+6.11.2024, 10:40:38 - INFO - query for the following criteria | {}
+6.11.2024, 10:41:06 - INFO - Example app listening on port 3030 
+6.11.2024, 10:42:09 - INFO - Example app listening on port 3030 
+6.11.2024, 10:42:19 - INFO - query for the following criteria | {}
+6.11.2024, 10:43:09 - INFO - Example app listening on port 3030 
+6.11.2024, 10:44:27 - INFO - Example app listening on port 3030 
+6.11.2024, 10:44:38 - INFO - Example app listening on port 3030 
+6.11.2024, 10:45:12 - INFO - Example app listening on port 3030 
+6.11.2024, 10:45:36 - INFO - Example app listening on port 3030 
+6.11.2024, 10:46:07 - INFO - Example app listening on port 3030 
+6.11.2024, 10:56:15 - INFO - Example app listening on port 3030 
+6.11.2024, 10:56:23 - DEBUG - Invalid login token  | Error: value must not be null or undefined
+6.11.2024, 10:56:49 - INFO - Example app listening on port 3030 
+6.11.2024, 10:58:09 - INFO - Example app listening on port 3030 
+6.11.2024, 11:14:21 - INFO - Example app listening on port 3030 
+6.11.2024, 11:14:35 - INFO - Example app listening on port 3030 
+6.11.2024, 11:19:49 - INFO - Example app listening on port 3030 
+6.11.2024, 11:21:32 - INFO - Example app listening on port 3030 
+6.11.2024, 11:21:53 - INFO - Example app listening on port 3030 
+6.11.2024, 11:21:56 - ERROR - Cannot get msg | ReferenceError: loggerService is not defined
+6.11.2024, 11:23:22 - INFO - Example app listening on port 3030 
+6.11.2024, 11:23:27 - ERROR - Cannot get msg | ReferenceError: loggerService is not defined
+6.11.2024, 11:24:08 - INFO - Example app listening on port 3030 
+6.11.2024, 11:26:00 - INFO - Example app listening on port 3030 
+6.11.2024, 11:26:07 - ERROR - could not find msg : 672b2fa9bcbf9d30e246037c | ReferenceError: ObjectId is not defined
+6.11.2024, 11:26:07 - ERROR - Cannot get msg | Error: could not find msg
+6.11.2024, 11:27:15 - INFO - Example app listening on port 3030 
+6.11.2024, 11:28:07 - ERROR - could not find msg : 672b2fa9bcbf9d30e246037c | Error: could not find msg
+6.11.2024, 11:28:07 - ERROR - Cannot get msg | Error: could not find msg
+6.11.2024, 11:28:38 - INFO - Example app listening on port 3030 
+6.11.2024, 11:28:46 - ERROR - could not find msg : 672b2fa9bcbf9d30e246037c | Error: could not find msg
+6.11.2024, 11:28:46 - ERROR - Cannot get msg | Error: could not find msg
+6.11.2024, 11:29:13 - INFO - Example app listening on port 3030 
+6.11.2024, 11:29:19 - ERROR - could not find msg : 672b2fa9bcbf9d30e246037c | Error: could not find msg
+6.11.2024, 11:29:19 - ERROR - Cannot get msg | Error: could not find msg
+6.11.2024, 11:30:13 - INFO - Example app listening on port 3030 
+6.11.2024, 11:30:17 - ERROR - could not find msg : 672b2fa9bcbf9d30e246037c | ReferenceError: ObjectId is not defined
+6.11.2024, 11:30:17 - ERROR - Cannot get msg | Error: could not find msg
+6.11.2024, 11:30:42 - INFO - Example app listening on port 3030 
+6.11.2024, 11:31:06 - INFO - Example app listening on port 3030 
+6.11.2024, 12:01:18 - INFO - Example app listening on port 3030 
+6.11.2024, 12:01:26 - INFO - Example app listening on port 3030 
+6.11.2024, 12:02:09 - INFO - Example app listening on port 3030 
+6.11.2024, 12:04:38 - INFO - Example app listening on port 3030 
+6.11.2024, 12:07:00 - INFO - Example app listening on port 3030 
+6.11.2024, 12:07:20 - INFO - Example app listening on port 3030 
+6.11.2024, 12:07:50 - INFO - Example app listening on port 3030 
+6.11.2024, 12:07:57 - ERROR - could not save msg: undefined | BSONError: hex string must be 24 characters
+6.11.2024, 12:08:36 - ERROR - could not save msg: undefined | BSONError: hex string must be 24 characters
+6.11.2024, 12:09:18 - INFO - Example app listening on port 3030 
+6.11.2024, 12:09:24 - ERROR - could not save msg: undefined | BSONError: hex string must be 24 characters
+6.11.2024, 12:10:10 - INFO - Example app listening on port 3030 
+6.11.2024, 12:10:20 - INFO - Example app listening on port 3030 
+6.11.2024, 12:10:25 - ERROR - could not save msg: undefined | BSONError: hex string must be 24 characters
+6.11.2024, 12:11:20 - INFO - Example app listening on port 3030 
+6.11.2024, 12:11:25 - INFO - Example app listening on port 3030 
+6.11.2024, 12:11:28 - ERROR - could not update msg: undefined | BSONError: hex string must be 24 characters
+6.11.2024, 12:11:52 - INFO - Example app listening on port 3030 
+6.11.2024, 12:12:30 - INFO - Example app listening on port 3030 
+6.11.2024, 12:12:33 - INFO - Example app listening on port 3030 
+6.11.2024, 12:55:35 - INFO - query for the following criteria | {}
+6.11.2024, 12:55:35 - INFO - query for the following criteria | {}
+6.11.2024, 13:01:27 - INFO - Missing credentials, should have been spotted at frontend
+6.11.2024, 13:01:27 - ERROR - Could not sign up | Missing required signup info
+6.11.2024, 13:01:27 - ERROR - could not add user | Error: Could not sign up
+6.11.2024, 13:03:18 - INFO - query for the following criteria | {}
+6.11.2024, 13:03:18 - INFO - query for the following criteria | {}

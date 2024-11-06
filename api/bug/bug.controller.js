@@ -1,3 +1,4 @@
+import { text } from "express"
 import { loggerService } from "../../services/logger.service.js"
 import { bugService } from "./bug.service.js"
 
@@ -15,15 +16,16 @@ export async function getBugs (req, res){
 
 export async function updateBug (req, res) {
     const {loggedinUser} = req
-    const { title, description, severity } = req.body
+    const {_id, title, description, severity } = req.body
     const bugToSave = {
+        _id,
         title,
         description,
         severity: +severity
     }
 
     try {
-        const savedBug = await bugService.save( bugToSave , loggedinUser)
+        const savedBug = await bugService.update( bugToSave , loggedinUser)
         res.send(savedBug)
     } catch (err) {
         return res.status(400).send("Could not update bug")
@@ -42,9 +44,10 @@ export async function addBug  (req, res)  {
     }
 
     try {
-        const savedBug = await bugService.save( bugToSave , loggedinUser)
+        const savedBug = await bugService.add( bugToSave , loggedinUser)
         res.send(savedBug)
     } catch (err) {
+        loggerService.error('Cannot add bug', err)
         return res.status(400).send("Could not add bug")
     }
 }
@@ -55,10 +58,9 @@ export async function getBug  (req, res) {
     if (!visitedBugIds.includes(bugId)){
         res.cookie('visitBug', [...visitedBugIds, bugId], {maxAge: 7 * 1000 })
     }
-    if (visitBug.length > 1) return res.status(401).send('Wait for a bit')
+    if (visitedBugIds.length > 1) return res.status(401).send('Wait for a bit')
        
     try{
-        console.log('visitBug:', visitBug)
         const bug = await bugService.getById ( bugId )
         res.send(bug )
 
@@ -81,6 +83,33 @@ export async function removeBug  (req, res)  {
         res.status(400).send("Cannot remove bug")
 
     }
+}
 
+export async function addBugNote  (req, res)  {
+    const {loggedinUser} = req
 
+    try {
+        const bugId = req.params._id
+        const note = {
+            text: req.body.text,
+            by: loggedinUser,
+        }
+        const savedNote = await bugService.addBugNote( bugId , note)
+        res.json(savedNote)
+    } catch (err) {
+        loggerService.error(`add bug note failed: ${err}`)
+        return res.status(400).send("Could not add bug note")
+    }
+}
+
+export async function removeBugNote  (req, res)  {
+    try{
+        const {bugId, noteId} = req.params
+
+        const removedOd = await bugService.removeBugNote( bugId , noteId )
+        res.send(removedOd)
+    } catch (err ){
+        loggerService.error(`failed to remove bug note: ${err}`)
+        res.status(400).send("Cannot remove bug note")
+    }
 }

@@ -50,7 +50,7 @@ async function signup(username, password, fullname, img, score) {
         if (userExist) throw 'Username already taken'
 
         const hash = await bcrypt.hash(password, saltRounds)
-        return userService.save({ username, password: hash, fullname, img, score })
+        return userService.add({ username, password: hash, fullname, img, score })
 
     } catch (err) {
         loggerService.error("Could not sign up", err)
@@ -68,8 +68,10 @@ async function getLoginToken(user) {
 
 function validateToken(token) {
     try {
+        console.log('token:', token)
         const json = cryptr.decrypt(token)
         const loggedinUser = JSON.parse(json)
+        console.log('loggedinUser:', loggedinUser)
         return loggedinUser
     } catch (err) {
         loggerService.debug('Invalid login token ', err)

@@ -38,11 +38,19 @@ function isError (e) {
     return e && e.stack && e.message
 }
 
+function customStringify(arg) {
+    return JSON.stringify(arg, (key, value) => {
+        if (value instanceof RegExp) {
+            return value.toString(); // Convert regex to string
+        }
+        return value;
+    })
+}
+
 function doLog(level, ...args) {
 
-    const strs = args.map(arg =>
-        (typeof arg === 'string' || isError(arg)) ? arg : JSON.stringify(arg)
-    )
+    const strs = args.map(arg => (typeof arg === 'string' || isError(arg) ) ? arg : customStringify(arg))
+
     var line = strs.join(' | ')
     line = `${_getTime()} - ${level} - ${line}\n`
     console.log(line)
