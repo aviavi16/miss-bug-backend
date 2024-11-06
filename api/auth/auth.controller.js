@@ -7,17 +7,14 @@ import { authService } from "./auth.service.js"
 
 export async function login(req, res) {
     const { username, password } = req.body
-
     try {
         const user = await authService.login(username, password)
-        loggerService.info('User login: ', user)
-
         const loginToken = await authService.getLoginToken(user)
 
+        loggerService.info('User login: ', user)
+
         res.cookie('loginToken', loginToken, { sameSite: 'None', secure: true })
-
         res.json(user)
-
     } catch (err) {
         loggerService.error(' Failed to Login ', err)
         res.status(401).send('Failed to Login')

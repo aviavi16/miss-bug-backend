@@ -10,14 +10,46 @@ export const msgService = {
     update,
 }
 
-async function query(){
+async function query(filterBy = {}){
 
-    
-    try{    
+
+    try{   
+        const criteria = _buildCriteria(filterBy) 
         const collection = await dbService.getCollection('msg')
-        var msgCursor = await collection.find( ) //skip, limit if we prefer...
     
-        const msgs = await msgCursor.toArray()
+        const msgs = await collection.aggregate([
+            {
+                $match: criteria,
+            },
+            {
+                $lookup: {
+                    localField: 'aboutBugId',
+                    from: 'bug', foreignField: '_id',
+                    as: 'aboutBug'
+                }
+            },
+            {
+                $unwind: '$aboutBug'
+            },
+            {
+                $lookup: {
+                    localField: 'byUserId',
+                    from: 'user', foreignField: '_id',
+                    as: 'byUser',
+                },
+            },
+            {
+                $unwind: '$byUser'
+            },
+            {
+                $project : {
+                    'txt': true,
+                    'aboutBug._id' : true,'aboutBug.title' : true, 'aboutBug.severity' : true,
+                    'byUser._id' : true,'byUser.fullname' : true,
+                }
+            }
+        ]).toArray()
+        console.log('msgs:', msgs)
         return msgs
     } catch (err){
         loggerService.error("Cannot get msgs", err)
@@ -79,4 +111,13 @@ async function add( msgToSave ){
         loggerService.error("could not add msg", err)
         throw  new Error ("could not add msg")
     }
+}
+
+function _buildCriteria(filterBy){
+    if ( ! filterBy.search) return {}
+    const criteria = {
+    txt: { $regex: filterBy.search, $options: 'i'},
+    //fullname: { $gte: filterBy.}
+    }
+    return criteria
 }

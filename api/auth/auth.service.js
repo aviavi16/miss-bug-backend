@@ -13,26 +13,28 @@ export const authService = {
 }
 
 async function login(username, password) {
-    try {
-        const user = await userService.getByUsername(username)
-        if (!user) return null
-        
-        //TODO also check password
-        const { _id, fullname, img, score, isAdmin } = user
+    // try {
+    loggerService.debug(`auth.service - login with username: ${username}`)
 
-        const miniUser = {
-            _id,
-            fullname,
-            img,
-            score,
-            isAdmin
-        }
+    const user = await userService.getByUsername(username)
+    if (!user) return Promise.reject('Invalid username or password')
+    
+    //TODO also check password
+    const { _id, fullname, img, score, isAdmin } = user
 
-        return miniUser
-    } catch (err) {
-        loggerService.error("Could not log in", err)
-        throw new Error("Could not log in")
+    const miniUser = {
+        _id: _id.toString(),
+        fullname,
+        img,
+        score,
+        isAdmin
     }
+
+    return miniUser
+    // } catch (err) {
+    //     loggerService.error("Could not log in", err)
+    //     throw new Error("Could not log in")
+    // }
 }
 
 async function signup(username, password, fullname, img, score) {
@@ -68,10 +70,8 @@ async function getLoginToken(user) {
 
 function validateToken(token) {
     try {
-        console.log('token:', token)
         const json = cryptr.decrypt(token)
         const loggedinUser = JSON.parse(json)
-        console.log('loggedinUser:', loggedinUser)
         return loggedinUser
     } catch (err) {
         loggerService.debug('Invalid login token ', err)

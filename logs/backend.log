@@ -1280,3 +1280,111 @@
 6.11.2024, 13:01:27 - ERROR - could not add user | Error: Could not sign up
 6.11.2024, 13:03:18 - INFO - query for the following criteria | {}
 6.11.2024, 13:03:18 - INFO - query for the following criteria | {}
+6.11.2024, 13:28:30 - INFO - Example app listening on port 3030
+6.11.2024, 13:28:58 - INFO - query for the following criteria | {}
+6.11.2024, 13:28:58 - INFO - query for the following criteria | {}
+6.11.2024, 13:29:01 - INFO - query for the following criteria | {}
+6.11.2024, 13:29:01 - INFO - query for the following criteria | {}
+6.11.2024, 13:29:10 - INFO - query for the following criteria | {}
+6.11.2024, 13:29:11 - INFO - query for the following criteria | {}
+6.11.2024, 13:56:24 - INFO - Example app listening on port 3030
+6.11.2024, 13:56:56 - INFO - Example app listening on port 3030
+6.11.2024, 13:58:11 - INFO - Example app listening on port 3030
+6.11.2024, 14:10:13 - INFO - Example app listening on port 3030
+6.11.2024, 14:11:12 - INFO - Example app listening on port 3030
+6.11.2024, 14:13:02 - INFO - Example app listening on port 3030
+6.11.2024, 14:17:16 - INFO - Example app listening on port 3030
+6.11.2024, 14:28:45 - INFO - Example app listening on port 3030
+6.11.2024, 14:28:49 - ERROR - Cannot get msgs | TypeError: Class constructor ObjectId cannot be invoked without 'new'
+6.11.2024, 14:29:05 - INFO - Example app listening on port 3030
+6.11.2024, 14:29:08 - ERROR - Cannot get msgs | BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+6.11.2024, 14:29:18 - INFO - Example app listening on port 3030
+6.11.2024, 14:29:21 - ERROR - Cannot get msgs | TypeError: ObjectId.createFromHexString is not a constructor
+6.11.2024, 14:29:30 - INFO - Example app listening on port 3030
+6.11.2024, 14:29:34 - ERROR - Cannot get msgs | BSONError: hex string must be 24 characters
+6.11.2024, 14:30:12 - INFO - Example app listening on port 3030
+6.11.2024, 14:30:20 - ERROR - Cannot get msgs | BSONError: hex string must be 24 characters
+6.11.2024, 14:30:33 - INFO - Example app listening on port 3030
+6.11.2024, 14:31:25 - INFO - Example app listening on port 3030
+6.11.2024, 14:31:29 - ERROR - Cannot get msgs | BSONError: hex string must be 24 characters
+6.11.2024, 14:31:45 - INFO - Example app listening on port 3030
+6.11.2024, 14:31:48 - ERROR - Cannot get msgs | TypeError: Class constructor ObjectId cannot be invoked without 'new'
+6.11.2024, 14:31:54 - INFO - Example app listening on port 3030
+6.11.2024, 14:35:28 - INFO - Example app listening on port 3030
+6.11.2024, 14:35:48 - INFO - Example app listening on port 3030
+6.11.2024, 21:04:38 - INFO - Example app listening on port 3030
+6.11.2024, 21:06:06 - INFO - query for the following criteria | {}
+6.11.2024, 21:06:06 - INFO - query for the following criteria | {}
+6.11.2024, 21:08:59 - INFO - query for the following criteria | {}
+6.11.2024, 21:09:00 - INFO - query for the following criteria | {}
+6.11.2024, 21:10:07 - INFO - Example app listening on port 3030
+6.11.2024, 21:14:27 - INFO - Example app listening on port 3030
+6.11.2024, 21:16:17 - INFO - Example app listening on port 3030
+6.11.2024, 21:17:57 - INFO - Example app listening on port 3030
+6.11.2024, 21:18:20 - INFO - Example app listening on port 3030
+6.11.2024, 21:19:00 - INFO - query for the following criteria | {}
+6.11.2024, 21:19:00 - INFO - query for the following criteria | {}
+6.11.2024, 21:19:31 - INFO - visited route /login
+6.11.2024, 21:19:31 - INFO - User login:  | null
+6.11.2024, 21:19:33 - INFO - query for the following criteria | {}
+6.11.2024, 21:19:33 - INFO - query for the following criteria | {}
+6.11.2024, 21:21:47 - INFO - Example app listening on port 3030
+6.11.2024, 21:22:55 - INFO - Example app listening on port 3030
+6.11.2024, 21:23:32 - INFO - Example app listening on port 3030
+6.11.2024, 21:26:01 - INFO - Example app listening on port 3030
+6.11.2024, 21:26:09 - INFO - visited route /logout
+6.11.2024, 21:26:09 - DEBUG - user logged out
+6.11.2024, 21:26:18 - INFO - visited route /login
+6.11.2024, 21:26:18 - ERROR - Could not log in | ReferenceError: logger is not defined
+6.11.2024, 21:26:18 - ERROR -  Failed to Login  | Error: Could not log in
+6.11.2024, 21:26:43 - INFO - Example app listening on port 3030
+6.11.2024, 21:26:47 - INFO - visited route /login
+6.11.2024, 21:26:47 - DEBUG - auth.service - login with username: avinoam
+6.11.2024, 21:32:46 - INFO - Example app listening on port 3030
+6.11.2024, 21:32:51 - INFO - Example app listening on port 3030
+6.11.2024, 21:33:00 - INFO - visited route /login
+6.11.2024, 21:33:00 - DEBUG - auth.service - login with username: avinoam
+6.11.2024, 21:37:00 - INFO - Example app listening on port 3030
+6.11.2024, 21:37:03 - INFO - visited route /login
+6.11.2024, 21:37:03 - DEBUG - auth.service - login with username: avinoam
+6.11.2024, 21:37:03 - ERROR -  Failed to Login  | Invalid username or password
+6.11.2024, 21:38:10 - INFO - visited route /signup
+6.11.2024, 21:38:10 - DEBUG - avinoam
+6.11.2024, 21:38:10 - DEBUG - auth.service - signup with username: avinoam, fullname: avinoam avi
+6.11.2024, 21:38:10 - DEBUG - auth.route (controller) - new account:{"username":"avinoam","password":"$2b$10$mt6bE5xkDaCPjCj.rkBKbuX5G9cqIg5PqyqeegXfqwmYB8.lX5h8y","fullname":"avinoam avi","img":"https://static8.depositphotos.com/1007989/894/i/450/depositphotos_8943042-stock-photo-okay-smiley.jpg","score":10000,"_id":"672bc5a258afa2469835344d"}
+6.11.2024, 21:38:10 - DEBUG - auth.service - login with username: avinoam
+6.11.2024, 21:38:10 - INFO - User signup : | {"_id":"672bc5a258afa2469835344d","fullname":"avinoam avi","img":"https://static8.depositphotos.com/1007989/894/i/450/depositphotos_8943042-stock-photo-okay-smiley.jpg","score":10000}
+6.11.2024, 21:38:14 - INFO - visited route /logout
+6.11.2024, 21:38:14 - DEBUG - user logged out
+6.11.2024, 21:38:18 - INFO - visited route /login
+6.11.2024, 21:38:18 - DEBUG - auth.service - login with username: avinoam
+6.11.2024, 21:38:18 - INFO - User login:  | {"_id":"672bc5a258afa2469835344d","fullname":"avinoam avi","img":"https://static8.depositphotos.com/1007989/894/i/450/depositphotos_8943042-stock-photo-okay-smiley.jpg","score":10000}
+6.11.2024, 21:38:26 - INFO - query for the following criteria | {}
+6.11.2024, 21:38:26 - INFO - query for the following criteria | {}
+6.11.2024, 21:38:42 - ERROR - Cannot add bug | ReferenceError: bugToSave is not defined
+6.11.2024, 21:39:59 - INFO - Example app listening on port 3030
+6.11.2024, 21:40:48 - INFO - Example app listening on port 3030
+6.11.2024, 21:42:19 - INFO - Example app listening on port 3030
+6.11.2024, 21:56:21 - INFO - query for the following criteria | {}
+6.11.2024, 21:57:03 - INFO - query for the following criteria | {}
+6.11.2024, 21:57:04 - INFO - query for the following criteria | {}
+6.11.2024, 21:59:31 - INFO - Example app listening on port 3030
+6.11.2024, 22:02:27 - INFO - Example app listening on port 3030
+6.11.2024, 22:08:13 - INFO - Example app listening on port 3030
+6.11.2024, 22:08:21 - ERROR - Cannot get msgs | BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+6.11.2024, 22:08:52 - INFO - Example app listening on port 3030
+6.11.2024, 22:08:58 - ERROR - Cannot get msgs | BSONError: hex string must be 24 characters
+6.11.2024, 22:09:31 - INFO - Example app listening on port 3030
+6.11.2024, 22:10:22 - INFO - Example app listening on port 3030
+6.11.2024, 22:10:28 - ERROR - Cannot get msgs | BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+6.11.2024, 22:10:35 - INFO - Example app listening on port 3030
+6.11.2024, 22:17:33 - INFO - Example app listening on port 3030
+6.11.2024, 22:25:22 - INFO - Example app listening on port 3030
+6.11.2024, 22:25:27 - ERROR - Cannot get msgs | MongoServerError: path option to $unwind stage should be prefixed with a '$': aboutBug
+6.11.2024, 22:26:14 - INFO - Example app listening on port 3030
+6.11.2024, 22:29:27 - INFO - Example app listening on port 3030
+6.11.2024, 22:29:37 - INFO - Example app listening on port 3030
+6.11.2024, 22:34:19 - INFO - query for the following criteria | {}
+6.11.2024, 22:34:20 - INFO - query for the following criteria | {}
+6.11.2024, 22:34:21 - INFO - query for the following criteria | {}
+6.11.2024, 23:18:28 - INFO - Example app listening on port 3030

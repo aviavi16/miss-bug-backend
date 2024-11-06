@@ -33,19 +33,12 @@ export async function updateBug (req, res) {
 }
 
 export async function addBug  (req, res)  {
-    const {loggedinUser} = req
-    const { title, description, severity, createdAt } = req.body
-    const bugToSave = {
-        title,
-        description,
-        severity: +severity,
-        createdAt : +createdAt,
-        owner : loggedinUser
-    }
-
+    const {loggedinUser, body: bug} = req
+    
     try {
-        const savedBug = await bugService.add( bugToSave , loggedinUser)
-        res.send(savedBug)
+        bug.owner = loggedinUser
+        const savedBug = await bugService.add( bug )
+        res.json(savedBug)
     } catch (err) {
         loggerService.error('Cannot add bug', err)
         return res.status(400).send("Could not add bug")

@@ -49,6 +49,8 @@ async function getById( bugId ){
         const bug = await collection.findOne(criteria)
         if( ! bug) throw new Error ( 'could not find bug')
         bug.createdAt = bug._id.getTimestamp()
+
+        
         return bug
     } catch (err ){
         loggerService.error(`could not find bug : ${bugId}`, err)
@@ -77,7 +79,7 @@ async function update( bug ){
     const bugToSave = {title : bug.title , description: bug.description , severity : bug.severity}
 
     try {    
-        const criteria = { _id : bugToSave._id}
+        const criteria = { _id: ObjectId.createFromHexString(bug._id)}
         const collection = await dbService.getCollection('bug')
         await collection.updateOne(criteria , { $set: bugToSave })
         return bug
