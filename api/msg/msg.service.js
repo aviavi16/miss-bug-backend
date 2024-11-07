@@ -14,7 +14,8 @@ async function query(filterBy = {}){
 
 
     try{   
-        const criteria = _buildCriteria(filterBy) 
+        const criteria = filterBy 
+        
         const collection = await dbService.getCollection('msg')
     
         const msgs = await collection.aggregate([
@@ -111,13 +112,4 @@ async function add( msgToSave ){
         loggerService.error("could not add msg", err)
         throw  new Error ("could not add msg")
     }
-}
-
-function _buildCriteria(filterBy){
-    if ( ! filterBy.search) return {}
-    const criteria = {
-    txt: { $regex: filterBy.search, $options: 'i'},
-    //fullname: { $gte: filterBy.}
-    }
-    return criteria
 }

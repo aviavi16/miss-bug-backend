@@ -2,6 +2,7 @@ import { dbService } from "../../services/db.service.js"
 import { loggerService } from "../../services/logger.service.js"
 import { ObjectId } from 'mongodb'
 import { utilService } from "../../services/util.service.js"
+import { msgService } from "../msg/msg.service.js"
 
 export const bugService = {
     query,
@@ -44,13 +45,20 @@ async function query( filterBy = { search: ''}){
 
 async function getById( bugId ){
     try{
-        const criteria = { _id: ObjectId.createFromHexString(bugId)}
+        var criteria = { _id: ObjectId.createFromHexString(bugId)}
         const collection = await dbService.getCollection('bug')
         const bug = await collection.findOne(criteria)
         if( ! bug) throw new Error ( 'could not find bug')
         bug.createdAt = bug._id.getTimestamp()
 
-        
+        criteria = { aboutBugId: new ObjectId(bugId)}
+
+        bug.relatedMessages = await msgService.query(criteria)
+        bug.relatedMessages = bug.relatedMessages.map(message =>{
+            delete message.aboutBug
+            return message
+        })
+        console.log('bug.relatedMessages:', bug.relatedMessages)
         return bug
     } catch (err ){
         loggerService.error(`could not find bug : ${bugId}`, err)
