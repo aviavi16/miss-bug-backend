@@ -1543,3 +1543,16 @@
 7.11.2024, 14:43:04 - INFO - Example app listening on port 3030
 7.11.2024, 14:43:09 - INFO - query for the following criteria | {}
 7.11.2024, 14:43:09 - INFO - query for the following criteria | {}
+7.11.2024, 21:07:59 - INFO - Example app listening on port 3030
+7.11.2024, 21:08:06 - INFO - Example app listening on port 3030
+7.11.2024, 21:10:19 - INFO - Example app listening on port 3030
+7.11.2024, 21:13:04 - INFO - Example app listening on port 3030
+7.11.2024, 21:16:52 - INFO - Example app listening on port 3030
+7.11.2024, 21:17:06 - INFO - Example app listening on port 3030
+7.11.2024, 21:17:18 - INFO - Example app listening on port 3030
+7.11.2024, 21:17:31 - INFO - query for the following criteria | {}
+7.11.2024, 21:17:31 - INFO - query for the following criteria | {}
+7.11.2024, 21:17:55 - ERROR - could not remove bug : 67290429a1935695a5ea0c1d | ReferenceError: asyncLocalStorage is not defined
+7.11.2024, 21:17:55 - ERROR - removeBug failed: Error: could not remove bug
+7.11.2024, 21:18:10 - ERROR - could not remove bug : 67290429a1935695a5ea0c1d | ReferenceError: asyncLocalStorage is not defined
+7.11.2024, 21:18:10 - ERROR - removeBug failed: Error: could not remove bug

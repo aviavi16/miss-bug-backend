@@ -68,9 +68,12 @@ async function getById( bugId ){
 
 async function remove( bugId){
     try{
-        //const { _id: ownerId, isAdmin} = loggedinUser
+        const { loggedinUser } = asyncLocalStorage.getStore()
+        const { _id: ownerId, isAdmin } = loggedinUser
+
         const criteria = { _id : ObjectId.createFromHexString( bugId)}
-        //if( !isAdmin) criteria['owner._id'] = ownerId
+        if(!isAdmin) criteria['owner._id'] = ownerId
+        
         const collection = await dbService.getCollection('bug')
         const res =  await collection.deleteOne(criteria )
         

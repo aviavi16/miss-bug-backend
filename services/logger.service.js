@@ -1,4 +1,5 @@
 import fs from 'fs'
+import { asyncLocalStorage } from './als.service.js'
 
 export const loggerService  = {
     debug,
@@ -48,8 +49,11 @@ function customStringify(arg) {
 }
 
 function doLog(level, ...args) {
+	const store = asyncLocalStorage.getStore()
+    const userId = store?.loggedinUser?._id
 
     const strs = args.map(arg => (typeof arg === 'string' || isError(arg) ) ? arg : customStringify(arg))
+    if(userId) strs.push(userId)
 
     var line = strs.join(' | ')
     line = `${_getTime()} - ${level} - ${line}\n`
